@@ -1,0 +1,255 @@
+.header {
+	position: relative;
+	z-index: 10;
+	background-color: @colorBlack;
+	transition: background-color .2s linear;
+
+	&_light {
+		background-color: transparent;
+	}
+
+	&.is-filled {
+		background-color: @colorBlack;
+	}
+
+	&__row {
+		display: flex;
+		align-items: flex-end;
+		height: 106px;
+	}
+
+	&-logo {
+		display: inline-block;
+		padding: 10px;
+		margin: -10px -10px 13px -10px;
+
+		&__icon {
+			width: 110px;
+			height: 46px;
+			fill: @colorLight;
+		}
+	}
+
+	&-contacts {
+		color: @colorLight;
+		margin: 0 0 19px 91px;
+
+		&__title {
+			display: block;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 6px;
+		}
+
+		&__phone {
+			display: block;
+			color: @colorLight;
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: bold;
+
+			&:hover {
+				color: @colorLight;
+			}
+		}
+	}
+
+	&-vision {
+		display: inline-block;
+		cursor: pointer;
+		padding: 10px;
+		margin: 0 0 14px 59px;
+
+		&__icon {
+			width: 71px;
+			height: 26px;
+			stroke: @colorLight;
+			transition: stroke .1s ease;
+		}
+
+		&:hover {
+			svg {
+				stroke: @colorPink;
+			}
+		}
+	}
+
+	&-menu {
+		position: relative;
+		display: inline-block;
+		width: 50px;
+		height: 66px;
+		cursor: pointer;
+		margin: 0 -10px 4px 39px;
+
+		span {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 30px;
+			height: 2px;
+			margin-left: -15px;
+			margin-top: -1px;
+			background-color: @colorLight;
+			transition: all .1s ease;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 2px;
+				background-color: @colorLight;
+				transition: all .1s ease;
+			}
+
+			&:before {
+				width: 100%;
+				margin-top: -12px;
+			}
+
+			&:after {
+				width: 20px;
+				margin-top: 12px;
+			}
+		}
+
+		&:hover {
+			span {
+				background-color: @colorPink;
+
+				&:before,
+				&:after {
+					background-color: @colorPink;
+				}
+			}
+		}
+
+		&.is-active {
+			span {
+				width: 40px;
+				margin-left: -20px;
+				background-color: transparent;
+
+				&:before,
+				&:after {
+					margin-top: 0;
+				}
+
+				&:before {
+					transform: rotate(-45deg);
+				}
+
+				&:after {
+					width: 100%;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+}
+
+.nav {
+	display: inline-block;
+	font-size: 0;
+	margin-left: auto;
+	transition: all .2s ease;
+
+	&.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		color: @colorLight;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 18px 15px;
+		transition: color .1s ease;
+
+		&:hover {
+			color: @colorPink;
+		}
+
+		&.is-active {
+			&:after {
+				content: '';
+				position: absolute;
+				left: 15px;
+				right: 15px;
+				bottom: 0;
+				border-bottom: 3px solid red;
+			}
+		}
+	}
+}
+
+.drop {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 106px;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	min-height: calc(100% - 106px);
+	background-color: @colorBlack;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2s linear;
+
+	&.is-opened {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__row {
+		font-size: 0;
+		padding: 45px 0 14px;
+		margin: 0 -15px;
+	}
+
+	&__col {
+		display: inline-block;
+		width: 33.3333%;
+		padding: 0 15px;
+	}
+
+	&-big {
+		margin-bottom: 49px;
+
+		&_l {
+			margin-bottom: 25px;
+		}
+
+		a {
+			font-size: 60px;
+			line-height: 66px;
+			font-family: @fCustom;
+		}
+	}
+
+	&-list {
+		margin: 28px 0 49px;
+
+		li {
+			max-width: 280px;
+			margin-bottom: 20px;
+		}
+
+		a {
+			font-size: 24px;
+			line-height: 28px;
+			color: @colorLight;
+
+			&:hover {
+				color: @colorPink;
+			}
+		}
+	}
+}

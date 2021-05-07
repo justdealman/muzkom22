@@ -1,0 +1,35 @@
+@colorBase: #000000;
+@colorLink: #5A5A5A;
+@colorLight: #FFFFFF;
+@colorBlack: #230C11;
+@colorPink: #F32556;
+@colorBlue: #4361EE;
+@colorGray: #918588;
+
+@fAstraSans: ~'"PT Astra Sans", sans-serif';
+@fCustom: ~'"Oranienbaum", sans-serif';
+
+@imgUrl: '../img';
+@picsUrl: '../pic';
+
+@tablet: ~'(max-width: 991px)';
+@mobile: ~'(max-width: 767px)';
+@small: ~'(max-width: 575px)';
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+
+	:-moz-placeholder {
+		color: @color;
+	}
+
+	::-moz-placeholder {
+		color: @color;
+	}
+
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}

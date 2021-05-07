@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Muzkom22</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<header class="header header_light">
+			<div class="container">
+				<div class="header__row">
+					<a href="#" class="header-logo">
+						<svg class="header-logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<nav class="nav">
+						<a href="#" class="nav__item">Программа</a>
+						<a href="#" class="nav__item">Фестиваль</a>
+						<a href="#" class="nav__item">Новости</a>
+						<a href="#" class="nav__item">Архив</a>
+					</nav>
+					<div class="header-contacts">
+						<span class="header-contacts__title">Касса театра</span>
+						<a href="tel:+73852505085" class="header-contacts__phone">(3852) 50-50-85</a>
+					</div>
+					<div class="header-vision">
+						<svg class="header-vision__icon">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+					</div>
+					<div class="header-menu js-menu">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="welcome">
+			<div class="container welcome__container">
+				<div class="welcome__row">
+					<div class="welcome__content">
+						<div class="welcome-head">
+							<div class="welcome-head__col welcome-head__col_title">
+								<h1 class="welcome__title">Театральный фестиваль курсовых и дипломных работ</h1>
+							</div>
+							<div class="welcome-head__col">
+								<div class="welcome-date">
+									<span class="welcome-date__days">10-14</span>
+									<div class="welcome-date__month">мая <span>2021</span></div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn-primary btn-primary_red welcome__btn">
+							<svg class="btn-primary__icon" width="22" height="16">
+								<use xlink:href="./img/sprite.svg#programme"></use>
+							</svg>
+							<span class="btn-primary__text">Программа</span>
+						</a>
+					</div>
+					<svg class="welcome__emblem" width="365" height="577" viewBox="0 0 365 577" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M71.3663 408.5C71.3663 381.473 82.4752 357.116 100.317 339.432C118.158 321.748 142.733 310.737 170 310.737V240C123.208 240 80.4554 259.019 49.8218 289.382C19.1881 319.746 0 361.787 0 408.5C0 454.879 19.1881 497.254 49.8218 527.618C80.4554 557.981 123.208 577 170 577V506.263C142.733 506.263 118.158 495.253 100.317 477.568C82.4752 459.884 71.3663 435.193 71.3663 408.5Z" fill="white"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M126.727 100.317C144.463 82.4752 168.893 71.3663 196 71.3663C223.107 71.3663 247.537 82.4752 265.273 100.317C283.01 118.158 294.053 142.733 294.053 170H365C365 123.208 345.925 80.4554 315.471 49.8218C285.018 19.1881 242.851 0 196 0C149.483 0 107.317 19.1881 76.5287 49.8218C46.0752 80.7921 27 123.208 27 170H97.9465C98.2812 142.733 108.99 118.158 126.727 100.317Z" fill="white"/>
+					</svg>
+					<svg class="welcome__logo" viewBox="0 0 140 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5962 61.1283C10.5962 57.0798 12.2456 53.4311 14.8947 50.782C17.5437 48.133 21.1924 46.4836 25.241 46.4836V35.8873C18.2935 35.8873 11.9457 38.7363 7.39736 43.2847C2.84898 47.8331 0 54.1308 0 61.1283C0 68.0759 2.84898 74.4236 7.39736 78.972C11.9457 83.5204 18.2935 86.3694 25.241 86.3694V75.7731C21.1924 75.7731 17.5437 74.1237 14.8947 71.4747C12.2456 68.8256 10.5962 65.1269 10.5962 61.1283Z" fill="#F32556"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8935 14.8947C21.5425 12.2456 25.1912 10.5962 29.2398 10.5962C33.2883 10.5962 36.937 12.2456 39.5861 14.8947C42.2351 17.5437 43.8846 21.1924 43.8846 25.241H54.4808C54.4808 18.2935 51.6318 11.9457 47.0834 7.39736C42.535 2.84898 36.2373 0 29.2398 0C22.2923 0 15.9945 2.84898 11.3961 7.39736C6.84776 11.9957 3.99878 18.2935 3.99878 25.241H14.595C14.645 21.1924 16.2444 17.5437 18.8935 14.8947Z" fill="#F32556"/>
+						<path d="M35.687 42.9847H37.2864L37.8862 41.5353H40.6353L41.235 42.9847H42.9344L40.0355 36.0372H38.636L35.687 42.9847ZM39.2357 38.0865L39.9855 40.0358H38.486L39.2357 38.0865ZM47.8827 42.9847H49.4821V36.0372H44.8837L44.7838 37.4367C44.4839 41.2853 43.9341 41.4853 43.3343 41.3853L43.2843 42.9847C44.9337 43.2347 45.7834 42.4849 46.1833 38.8362L46.3332 37.5367H47.8827V42.9847ZM50.6817 37.5367H52.7809V42.9847H54.3804V37.5367H56.4796V36.0372H50.7317V37.5367H50.6817ZM56.1797 42.9847H57.7791L58.3789 41.5353H61.128L61.7277 42.9847H63.4271L60.4782 36.0372H59.0787L56.1797 42.9847ZM59.7284 38.0865L60.4782 40.0358H58.9287L59.7284 38.0865ZM65.8763 42.9847L68.9752 38.6863V42.9847H70.5746V36.0372H69.1751L66.0762 40.3357V36.0372H64.4768V42.9847H65.8763ZM65.5764 34.2379C65.5764 35.1875 66.3261 35.8373 67.6756 35.8373C68.9252 35.8373 69.7749 35.1875 69.7249 34.2379H68.2254C68.2254 34.6877 68.0255 34.7377 67.6256 34.7377C67.1758 34.7377 67.0259 34.6377 67.0259 34.2379H65.5764ZM77.3222 41.1354C76.8723 41.4853 76.3225 41.6352 75.8227 41.6352C74.5732 41.6352 73.7235 40.7855 73.7235 39.536C73.7235 38.1864 74.5732 37.4367 75.6728 37.4367C76.3225 37.4367 76.7224 37.6366 77.0723 37.8866L77.772 36.687C77.3722 36.2871 76.5724 35.9872 75.6728 35.9872C73.2736 35.9872 72.0241 37.5867 72.0241 39.586C72.0241 41.7352 73.5235 43.1847 75.6728 43.1847C76.6224 43.1847 77.5221 42.8348 77.922 42.385L77.3222 41.1354ZM79.2215 42.9847H80.8209V39.6859L83.1701 42.9847H85.1694L82.3704 39.2361L84.9695 36.0372H83.0701L80.8209 39.0861V36.0372H79.2215V42.9847ZM87.6685 42.9847L90.7674 38.6863V42.9847H92.3668V36.0372H90.9673L87.8684 40.3357V36.0372H86.269V42.9847H87.6685ZM95.6656 42.9847L98.7645 38.6863V42.9847H100.364V36.0372H98.9645L95.8656 40.3357V36.0372H94.2662V42.9847H95.6656ZM95.3658 34.2379C95.3658 35.1875 96.1155 35.8373 97.465 35.8373C98.7146 35.8373 99.5643 35.1875 99.5143 34.2379H98.0148C98.0148 34.6877 97.8149 34.7377 97.415 34.7377C96.9652 34.7377 96.8152 34.6377 96.8152 34.2379H95.3658ZM36.5867 57.6295H38.1861V52.1815H40.5853V50.682H36.6367V57.6295H36.5867ZM41.1351 54.1308C41.1351 56.33 42.7345 57.7295 44.8338 57.7295C46.933 57.7295 48.5324 56.23 48.5324 54.1308C48.5324 51.9316 46.933 50.5321 44.8338 50.5321C42.5846 50.5321 41.1351 52.1315 41.1351 54.1308ZM42.8345 54.1308C42.8345 52.8812 43.6842 52.0315 44.8338 52.0315C45.9334 52.0315 46.833 52.8812 46.833 54.1308C46.833 55.2804 46.1333 56.23 44.8338 56.23C43.6842 56.23 42.8345 55.3304 42.8345 54.1308ZM54.7802 55.7302C54.3304 56.0801 53.7806 56.23 53.2807 56.23C52.0312 56.23 51.1815 55.3803 51.1815 54.1308C51.1815 52.7813 52.0312 52.0315 53.1308 52.0315C53.7806 52.0315 54.1804 52.2315 54.5303 52.4814L55.2301 51.2818C54.8302 50.8819 54.0305 50.582 53.1308 50.582C50.7317 50.582 49.4821 52.1815 49.4821 54.1808C49.4821 56.33 50.9816 57.7795 53.1308 57.7795C54.0805 57.7795 54.9801 57.4296 55.38 56.9798L54.7802 55.7302ZM62.4275 50.682H60.8281L59.4286 54.0808L57.4792 50.682H55.6799L58.6788 55.6302L58.5789 55.8302C58.4789 56.0301 58.3289 56.1301 58.079 56.1301C57.8791 56.1301 57.7791 56.0801 57.5792 55.9801L57.0294 57.3296C57.2293 57.4796 57.6792 57.6295 58.079 57.6295C59.0287 57.6295 59.6285 57.0297 60.1283 55.9801L62.4275 50.682ZM62.0776 58.8291H63.5771V57.6295H67.8755V58.8291H69.375V56.1301H68.4254V50.682H63.877L63.827 52.0815C63.727 54.3307 63.1272 55.7802 62.8273 56.1301H62.0776V58.8291ZM65.3265 53.3311L65.4264 52.1815H66.8259V56.1301H64.5767C64.8266 55.8302 65.2265 54.5306 65.3265 53.3311ZM69.7749 57.6295H71.3743L71.9741 56.18H74.7231L75.3229 57.6295H77.0223L74.1233 50.682H72.7238L69.7749 57.6295ZM73.3236 52.6813L74.0733 54.6306H72.5239L73.3236 52.6813ZM79.6214 57.6295V55.2804C79.8713 55.3304 80.2711 55.3304 80.3711 55.3304C81.9705 55.3304 82.9202 54.2307 82.9202 52.9812C82.9202 51.7816 82.2204 50.682 80.1212 50.682C79.5714 50.682 78.3718 50.682 78.0219 50.682V57.6295H79.6214ZM80.3211 52.1315C80.8709 52.1315 81.2708 52.3314 81.2708 52.9312C81.2708 53.581 80.771 53.7809 80.3211 53.7809C80.0712 53.7809 79.8213 53.7809 79.6214 53.7309V52.1315C79.9712 52.1315 80.1212 52.1315 80.3211 52.1315ZM89.2679 55.7302C88.8181 56.0801 88.2683 56.23 87.7685 56.23C86.5189 56.23 85.6692 55.3803 85.6692 54.1308C85.6692 52.7813 86.5189 52.0315 87.6185 52.0315C88.2683 52.0315 88.6681 52.2315 89.018 52.4814L89.7178 51.2818C89.3179 50.8819 88.5182 50.582 87.6185 50.582C85.2194 50.582 83.9698 52.1815 83.9698 54.1808C83.9698 56.33 85.4693 57.7795 87.6185 57.7795C88.5682 57.7795 89.4679 57.4296 89.8677 56.9798L89.2679 55.7302ZM90.3675 52.1815H92.4668V57.6295H94.0662V52.1815H96.1655V50.682H90.4175V52.1815H90.3675ZM97.3151 57.5796C97.7149 57.6295 98.6646 57.6295 99.3144 57.6295C100.814 57.6295 101.963 56.9298 101.963 55.4803C101.963 54.5806 101.464 54.0808 100.964 53.8809C101.464 53.531 101.763 53.0812 101.763 52.3314C101.763 51.3818 101.114 50.582 99.4143 50.582C98.6646 50.582 97.7149 50.632 97.3151 50.632V57.5796ZM99.5143 54.8305C100.014 54.8305 100.364 55.0305 100.364 55.4803C100.364 55.9301 100.064 56.23 99.4643 56.23C99.1644 56.23 99.0145 56.18 98.9145 56.18V54.8805H99.5143V54.8305ZM99.4143 52.1315C99.8142 52.1315 100.164 52.3314 100.164 52.7813C100.164 53.2811 99.8142 53.431 99.4143 53.431H98.8645V52.1815C99.0644 52.1315 99.2144 52.1315 99.4143 52.1315ZM103.663 57.6295H107.861V56.1301H105.212V54.8805H107.461V53.381H105.212V52.1815H107.761V50.682H103.663V57.6295ZM113.659 57.6295H115.259V50.682H113.659V53.3311H111.11V50.682H109.511V57.6295H111.11V54.8305H113.659V57.6295ZM121.356 57.6295H122.956V50.682H121.356V53.3311H118.807V50.682H117.208V57.6295H118.807V54.8305H121.356V57.6295ZM130.303 57.6295H131.903V50.682H130.303V57.6295ZM127.004 54.2807C127.604 54.2807 128.004 54.5806 128.004 55.1804C128.004 55.8302 127.654 56.1301 127.004 56.1301C126.855 56.1301 126.705 56.1301 126.555 56.0801V54.3307C126.705 54.3307 126.855 54.2807 127.004 54.2807ZM126.505 50.682H124.905V57.6295C125.305 57.6295 126.055 57.6295 126.755 57.6295C128.604 57.6295 129.604 56.6299 129.604 55.1304C129.604 53.7309 128.804 52.7813 127.054 52.7813C126.905 52.7813 126.705 52.7813 126.455 52.8312V50.682H126.505ZM135.302 57.6295L138.4 53.3311V57.6295H140V50.682H138.6L135.501 54.9805V50.682H133.902V57.6295H135.302ZM135.002 48.8826C135.002 49.8323 135.751 50.4821 137.101 50.4821C138.35 50.4821 139.2 49.8323 139.15 48.8826H137.651C137.651 49.3325 137.451 49.3825 137.051 49.3825C136.601 49.3825 136.451 49.2825 136.451 48.8826H135.002ZM36.5867 72.2243H38.1861V67.8259L40.1354 70.5249H40.3853L42.3346 67.8259V72.2743H43.9341V65.3268H42.4346L40.4353 68.2757L38.2861 65.3268H36.6867V72.2243H36.5867ZM51.8313 65.2768H50.2318L48.8323 68.6756L46.883 65.2768H45.0837L48.0826 70.2251L47.9826 70.425C47.8827 70.6249 47.7327 70.7249 47.4828 70.7249C47.2829 70.7249 47.1829 70.6749 46.983 70.5749L46.4332 71.9244C46.6331 72.0744 47.083 72.2243 47.4828 72.2243C48.4325 72.2243 49.0323 71.6246 49.5321 70.5749L51.8313 65.2768ZM54.8802 72.3743C56.1297 72.3743 57.3793 71.5746 57.3793 70.325C57.3793 69.5253 57.0794 68.9255 56.2297 68.6756V68.6256C56.8795 68.2258 57.0794 67.626 57.0794 67.1262C57.0794 65.8766 56.1797 65.1769 54.9302 65.1769C53.9305 65.1769 53.0308 65.6767 52.581 66.3264L53.4807 67.3761C53.8305 66.8762 54.2304 66.6763 54.7302 66.6763C55.1801 66.6763 55.48 66.8762 55.48 67.3261C55.48 67.7759 55.0801 67.9759 54.6303 67.9759H54.0305V69.4753H54.6802C55.43 69.4753 55.7799 69.7752 55.7799 70.1751C55.7799 70.7249 55.2301 70.9248 54.8302 70.9248C54.2804 70.9248 53.6806 70.525 53.2807 70.0751L52.431 71.1747C52.7809 71.6745 53.4807 72.3743 54.8802 72.3743ZM64.4768 72.2243H66.0762V65.2768H64.4768V72.2243ZM61.128 68.9255C61.7277 68.9255 62.1276 69.2254 62.1276 69.8252C62.1276 70.475 61.7777 70.7749 61.128 70.7749C60.978 70.7749 60.8281 70.7749 60.6781 70.7249V68.9755C60.878 68.9255 61.028 68.9255 61.128 68.9255ZM60.6781 65.2768H59.0787V72.2243C59.4785 72.2243 60.2283 72.2243 60.928 72.2243C62.7774 72.2243 63.777 71.2247 63.777 69.7252C63.777 68.3257 62.9773 67.3761 61.2279 67.3761C61.078 67.3761 60.878 67.3761 60.6281 67.4261V65.2768H60.6781ZM68.0255 72.2243H69.6249V68.9255L71.9741 72.2243H73.9734L71.1744 68.4757L73.7734 65.2768H71.8741L69.6249 68.3257V65.2768H68.0255V72.2243ZM74.2233 72.2243H75.8227L76.4225 70.7749H79.1715L79.7713 72.2243H81.4707L78.5717 65.2768H77.1722L74.2233 72.2243ZM77.772 67.3261L78.5218 69.2754H76.9723L77.772 67.3261ZM86.4189 72.2243H88.0184V65.2768H83.42L83.32 66.6763C83.0202 70.525 82.4703 70.7249 81.8706 70.6249L81.8206 72.2243C83.47 72.4743 84.3197 71.7245 84.7195 68.0758L84.8695 66.7763H86.4189V72.2243ZM92.017 68.9255C92.6167 68.9255 93.1166 69.1754 93.1166 69.8252C93.1166 70.525 92.6667 70.7749 92.017 70.7749C91.867 70.7749 91.7171 70.7749 91.5671 70.7249V68.9755C91.767 68.9255 91.917 68.9255 92.017 68.9255ZM91.5671 65.2768H89.9677V72.2243C90.3675 72.2243 91.1173 72.2243 91.817 72.2243C93.7663 72.2243 94.766 71.2247 94.766 69.7252C94.766 68.3257 93.9663 67.3761 92.1169 67.3761C91.967 67.3761 91.767 67.3761 91.5171 67.4261V65.2768H91.5671ZM100.414 72.2243H102.013V65.2768H100.414V67.9259H97.8649V65.2768H96.2654V72.2243H97.8649V69.4253H100.414V72.2243ZM109.411 72.2243H111.01V65.2768H109.411V72.2243ZM106.062 68.9255C106.662 68.9255 107.062 69.2254 107.062 69.8252C107.062 70.475 106.712 70.7749 106.062 70.7749C105.912 70.7749 105.762 70.7749 105.612 70.7249V68.9755C105.762 68.9255 105.912 68.9255 106.062 68.9255ZM105.562 65.2768H103.963V72.2243C104.363 72.2243 105.112 72.2243 105.812 72.2243C107.661 72.2243 108.661 71.2247 108.661 69.7252C108.661 68.3257 107.861 67.3761 106.112 67.3761C105.962 67.3761 105.762 67.3761 105.512 67.4261V65.2768H105.562ZM114.359 72.2243L117.458 67.9259V72.2243H119.057V65.2768H117.658L114.559 69.5753V65.2768H112.959V72.2243H114.359ZM114.059 63.5274C114.059 64.4771 114.809 65.1269 116.158 65.1269C117.408 65.1269 118.258 64.4771 118.208 63.5274H116.708C116.708 63.9773 116.508 64.0273 116.108 64.0273C115.659 64.0273 115.509 63.9273 115.509 63.5274H114.059ZM35.787 81.4211H37.8862V86.8691H39.4857V81.4211H41.5849V79.9216H35.787V81.4211ZM42.7345 86.8691H46.983V85.3697H44.3339V84.1201H46.5831V82.6206H44.3339V81.4211H46.883V79.9216H42.7845V86.8691H42.7345ZM47.7827 86.8691H49.3821L49.9819 85.4197H52.7309L53.3307 86.8691H55.0301L52.1312 79.9216H50.7317L47.7827 86.8691ZM51.3314 81.9709L52.0812 83.9202H50.5317L51.3314 81.9709ZM54.7302 81.4211H56.8295V86.8691H58.4289V81.4211H60.5282V79.9216H54.7802V81.4211H54.7302ZM63.2272 86.8691V84.52C63.4771 84.57 63.827 84.57 63.9769 84.57C65.5764 84.57 66.526 83.4703 66.526 82.2208C66.526 81.0212 65.8263 79.9216 63.727 79.9216C63.1772 79.9216 61.9776 79.9216 61.6278 79.9216V86.8691H63.2272ZM63.927 81.3711C64.4768 81.3711 64.8766 81.571 64.8766 82.1708C64.8766 82.8206 64.3768 83.0205 63.927 83.0205C63.677 83.0205 63.4271 83.0205 63.2272 82.9705V81.4211C63.5771 81.3711 63.727 81.3711 63.927 81.3711Z" fill="white"/>
+					</svg>
+				</div>
+			</div>
+			<img src="./pic/welcome-1.jpg" class="welcome__bg img-cover" alt="">
+		</section>
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule__row">
+					<h2 class="title title_mb">Программа фестиваля</h2>
+					<table class="schedule-t">
+						<tbody>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">10</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Понедельник <span>18:30</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Вечер хореографических спектаклей</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Кемерово <span>|</span> 1 ч. 30 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 100 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">11</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Вторник <span>14:00</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Забавная история о короле, бутерброде и королевской корове</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Саратов <span>|</span> 45 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 150 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">11</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Вторник <span>18:30</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Светлые души</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Барнаул <span>|</span> 1 ч.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 200 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">12</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Среда <span>14:00</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Полет</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Барнаул <span>|</span> 1 ч.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">12</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Среда <span>18:30</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Пьеретта и Жако</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Новосибирск <span>|</span> 1 ч.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">13</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Четверг <span>18:30</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Мачеха Саманишвили</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">Театр «У Моста», г. Пермь <span>|</span> 2 ч. 10 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">14</span>
+										<span class="schedule-t-date__month">мая</span>
+									</div>
+								</td>
+								<td class="schedule-t_time">
+									<span class="schedule-t-time">Пятница <span>18:30</span></span>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Сибирь героическая</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">6+</span>
+										<span class="schedule-t-info__text">г. Новосибирск <span>|</span> 1 ч. 20 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="party">
+			<div class="container">
+				<div class="party__row">
+					<div class="party__content">
+						<h2 class="title party__title">Участники фестиваля</h2>
+						<p class="party__text">В 2021 году участниками фестиваля стали  коллективы  ведущих театральных вузов со всей страны:</p>
+						<ul class="party__list">
+							<li>Ансамбль современной хореографии «Вечное движение» Кемеровского государственного института культуры</li>
+							<li>Театральный институт Саратовской государственной консерватории имени Л.В. Собинова</li>
+							<li>Алтайский государственный институт культуры</li>
+							<li>Пермский институт культуры</li>
+							<li>Оперная студия Новосибирской государственной консерватории им. М.И. Глинки</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<img src="./pic/party-1.jpg" class="img-cover party__bg" alt="">
+		</section>
+		<section class="jury">
+			<div class="container">
+				<div class="jury__row">
+					<h2 class="title jury__title">Жюри фестиваля</h2>
+					<div class="jury-slider js-slider-juri">
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-1.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Брейтбург<br> Ким Александрович</a>
+								<span class="jury-item__text">Совесткий и российско-украинский музыкальный продюсер, аранжировщик и композитор, звукорежиссер, вокалист...</span>
+							</div>
+						</div>
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-2.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Зыкова<br> Наталья Сергеевна</a>
+								<span class="jury-item__text">Кандидат искусствоведения, исполнительный директор Ассоциации Музыкальных Театров – профессионального сообщества музыкальных...</span>
+							</div>
+						</div>
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-3.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Брейтбург<br> Валерия Вячеславовна</a>
+								<span class="jury-item__text">Кандидат искусствоведения, почетный работник сферы образования РФ. Преподаватель Российской Академии музыки имени Гнесиных...</span>
+							</div>
+						</div>
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-1.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Брейтбург<br> Ким Александрович</a>
+								<span class="jury-item__text">Совесткий и российско-украинский музыкальный продюсер, аранжировщик и композитор, звукорежиссер, вокалист...</span>
+							</div>
+						</div>
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-2.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Зыкова<br> Наталья Сергеевна</a>
+								<span class="jury-item__text">Кандидат искусствоведения, исполнительный директор Ассоциации Музыкальных Театров – профессионального сообщества музыкальных...</span>
+							</div>
+						</div>
+						<div class="jury-slider__col">
+							<div class="jury-item">
+								<div class="jury-item__photo">
+									<div class="jury-item__img">
+										<img src="./pic/jury-3.jpg" class="img-cover" alt="">
+									</div>
+								</div>
+								<a href="#" class="jury-item__name">Брейтбург<br> Валерия Вячеславовна</a>
+								<span class="jury-item__text">Кандидат искусствоведения, почетный работник сферы образования РФ. Преподаватель Российской Академии музыки имени Гнесиных...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<div class="container">
+				<div class="news__row">
+					<div class="head">
+						<div class="head__col head__col_title">
+							<h2 class="title">Новости</h2>
+						</div>
+						<div class="head__col">
+							<a href="#" class="head__all">Все новости</a>
+						</div>
+					</div>
+					<div class="news-list">
+						<div class="news-list__col">
+							<div class="news-item">
+								<div class="news-item__col">
+									<div class="news-item__photo">
+										<img src="./pic/news-1.jpg" alt="" class="img-cover">
+									</div>
+								</div>
+								<div class="news-item__col">
+									<div class="news-item__content">
+										<span class="news-item__date">08 апреля 2021</span>
+										<a href="#" class="news-item__title">Юбилей у Юрия Кашина</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news-list__col">
+							<div class="news-item">
+								<div class="news-item__col">
+									<div class="news-item__photo">
+										<img src="./pic/news-2.jpg" alt="" class="img-cover">
+									</div>
+								</div>
+								<div class="news-item__col">
+									<div class="news-item__content">
+										<span class="news-item__date">06 апреля 2021</span>
+										<a href="#" class="news-item__title">Программа VI «ШАГа»</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="container">
+				<div class="partners__row">
+					<div class="head">
+						<div class="head__col head__col_title">
+							<h2 class="title">Партнеры</h2>
+						</div>
+						<div class="head__col">
+							<a href="#" class="head__all">Все партнеры</a>
+						</div>
+					</div>
+					<div class="partners-list">
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-1.png" alt="" class="img-cover">
+							</div>
+						</div>
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-2.png" alt="" class="img-cover">
+							</div>
+						</div>
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-3.png" alt="" class="img-cover">
+							</div>
+						</div>
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-4.png" alt="" class="img-cover">
+							</div>
+						</div>
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-5.png" alt="" class="img-cover">
+							</div>
+						</div>
+						<div class="partners-list__col">
+							<div class="partners-item">
+								<img src="./pic/partner-6.png" alt="" class="img-cover">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-main">
+					<div class="footer-logo">
+						<svg class="footer-logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</div>
+					<div class="footer-main__col">
+						<a href="#" class="footer-main__title">Фестиваль</a>
+						<a href="#" class="footer-main__link">Цели и задачи</a>
+						<a href="#" class="footer-main__link">Положение</a>
+						<a href="#" class="footer-main__link">Участники</a>
+						<a href="#" class="footer-main__link">Жюри</a>
+					</div>
+					<div class="footer-main__col">
+						<a href="#" class="footer-main__title">Программа</a>
+					</div>
+					<div class="footer-main__col">
+						<a href="#" class="footer-main__title">Новости</a>
+					</div>
+					<div class="footer-main__col">
+						<a href="#" class="footer-main__title">Архив</a>
+					</div>
+				</div>
+				<div class="footer-vision">
+					<a href="#" class="footer-vision__link">
+						<svg class="footer-vision__icon" width="71" height="26">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+						<span class="footer-vision__text">Версия для слабовидящих</span>
+					</a>
+				</div>
+				<div class="footer-info">
+					<div class="footer-info__col footer-info__col_nav">
+						<span class="footer-info__text">© 2021. Все права защищены. Фестиваль «Шаг» — проект Алтайского театра музыкальной комедии.</span>
+						<div class="footer-info-nav">
+							<div class="footer-info-nav__col">
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Правила посещения театра</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-info__col">
+						<span class="footer-info__text">Разработка сайта:</span>
+						<span class="footer-info__text"><a href="#">Полезные системы</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="drop js-drop">
+			<div class="container">
+				<div class="drop__row">
+					<div class="drop__col">
+						<div class="drop-big drop-big_l">
+							<a href="#">Фестиваль</a>
+						</div>
+						<ul class="drop-list">
+							<li>
+								<a href="#">История и цели</a>
+							</li>
+							<li>
+								<a href="#">Положение</a>
+							</li>
+							<li>
+								<a href="#">Участники</a>
+							</li>
+							<li>
+								<a href="#">Жюри</a>
+							</li>
+						</ul>
+					</div>
+					<div class="drop__col">
+						<div class="drop-big">
+							<a href="#">Программа</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Новости</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Архив</a>
+						</div>
+					</div>
+					<div class="drop__col">
+						<ul class="drop-list">
+							<li>
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</li>
+							<li>
+								<a href="#">Правила посещения театра</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
