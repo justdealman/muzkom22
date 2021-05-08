@@ -5,18 +5,21 @@ $(function() {
     	var $t = $(this),
 			$drop = $('.js-drop'),
 			$header = $('.header'),
-			$headerMenu = $('.header .nav');
+			$headerMenu = $('.header .nav'),
+			$visible = $('.header-vision');
 
     	if ( !$t.hasClass('is-active') ) {
     		$drop.addClass('is-opened');
     		$t.addClass('is-active');
     		$header.addClass('is-filled');
 			$headerMenu.addClass('is-hidden');
+			$visible.addClass('is-visible');
 		} else {
 			$drop.removeClass('is-opened');
 			$t.removeClass('is-active');
 			$header.removeClass('is-filled');
 			$headerMenu.removeClass('is-hidden');
+			$visible.removeClass('is-visible');
 		}
 	});
 
@@ -36,7 +39,16 @@ $(function() {
             '</button>',
         dots: false,
         cssEase: 'ease',
-        speed: 1000
+        speed: 1000,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: true
+				}
+			}
+		]
     });
 
     $mainGallery = $('.js-gallery-main');

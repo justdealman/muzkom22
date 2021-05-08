@@ -16,10 +16,36 @@
 		padding-bottom: 23px;
 		margin: 0 -15px;
 
+		@media @tablet {
+			padding-top: 40px;
+			padding-bottom: 21px;
+		}
+
+		@media @mobile {
+			padding-bottom: 17px;
+		}
+
 		&__col {
 			display: inline-block;
 			width: 200 / 1200 * 100%;
 			padding: 0 15px;
+
+			@media @notebook {
+				width: 20%;
+			}
+
+			@media @tablet {
+				width: 33.3333%;
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					display: none;
+				}
+			}
+
+			@media @mobile {
+				width: 50%;
+			}
 		}
 
 		&__title {
@@ -29,6 +55,25 @@
 			font-weight: bold;
 			text-transform: uppercase;
 			margin-bottom: 16px;
+
+			&_tbl {
+				display: none;
+
+				@media @tablet {
+					display: block;
+					margin-top: 20px;
+				}
+
+				@media @mobile {
+					margin-top: 0;
+				}
+			}
+
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+				margin-bottom: 10px;
+			}
 		}
 
 		&__link {
@@ -36,6 +81,12 @@
 			font-size: 16px;
 			line-height: 18px;
 			margin-bottom: 9px;
+
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+				margin-bottom: 6px;
+			}
 		}
 	}
 
@@ -43,6 +94,18 @@
 		display: inline-block;
 		width: 300 / 1200 * 100%;
 		padding: 0 15px;
+
+		@media @notebook {
+			width: 20%;
+		}
+
+		@media @tablet {
+			width: 33.3333%;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
 
 		&__icon {
 			width: 100px;
@@ -52,6 +115,12 @@
 			line-height: 18px;
 			margin-top: -2px;
 			margin-bottom: 10px;
+
+			@media @mobile {
+				width: 76px;
+				height: 32px;
+				margin-bottom: 26px;
+			}
 		}
 	}
 
@@ -62,6 +131,16 @@
 		padding: 19px 0;
 		border-top: 1px solid rgba(255, 255, 255, 0.1);
 
+		@media @mobile {
+			padding: 8px 0 3px;
+		}
+
+		@media @mobile {
+			justify-content: flex-start;
+			text-align: left;
+			align-items: center;
+		}
+
 		&__link {
 			display: inline-block;
 			display: flex;
@@ -70,8 +149,13 @@
 			white-space: nowrap;
 			padding: 10px;
 
-			&:hover {
+			@media @mobile {
+				min-height: 32px;
+				white-space: normal;
+				margin: 0 -10px;
+			}
 
+			&:hover {
 				svg {
 					stroke: @colorPink;
 				}
@@ -90,24 +174,57 @@
 			line-height: 18px;
 			font-weight: bold;
 			text-transform: uppercase;
+
+			@media @tablet {
+				font-size: 14px;
+				line-height: 16px;
+			}
 		}
 	}
 
 	&-info {
-		padding: 33px 0 27px;
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		position: relative;
+		font-size: 0;
+		padding: 34px 0 27px;
+		margin: 0 -15px;
 
-		&__row {
-			font-size: 0;
-			margin: 0 -15px;
+		@media @tablet {
+			padding-top: 31px;
+			padding-bottom: 14px;
+		}
+
+		@media @mobile {
+			padding-top: 25px;
+			padding-bottom: 19px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			top: 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
 		}
 
 		&__col {
 			display: inline-block;
 			padding: 0 15px;
 
+			@media @tablet {
+				display: block;
+			}
+
 			&_nav {
 				width: (200 * 3 + 300) / 1200 * 100%;
+
+				@media @notebook {
+					width: 80%;
+				}
+
+				@media @tablet {
+					width: auto;
+				}
 			}
 		}
 
@@ -116,17 +233,70 @@
 			font-size: 16px;
 			line-height: 18px;
 			margin-bottom: 13px;
+
+			@media @tablet {
+				display: inline-block;
+				font-size: 14px;
+				line-height: 16px;
+				margin-bottom: 15px;
+
+				&_author {
+					margin-left: 7px;
+				}
+			}
+
+			@media @mobile {
+				margin-bottom: 20px;
+			}
+
+			br {
+				display: none;
+
+				@media @mobile {
+					display: block;
+				}
+			}
 		}
 
 		&-nav {
 			font-size: 0;
 			margin: 0 -15px 13px;
 
+			@media @notebook {
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+
+			@media @tablet {
+				margin-left: -15px;
+				margin-right: -15px;
+				margin-bottom: 11px;
+			}
+
+			@media @mobile {
+				margin-bottom: 20px;
+			}
+
 			&__col {
 				display: inline-block;
 				font-size: 16px;
 				line-height: 18px;
 				padding: 0 15px;
+
+				@media @notebook {
+					padding: 0 10px;
+				}
+
+				@media @tablet {
+					font-size: 14px;
+					line-height: 16px;
+					padding: 0 15px;
+				}
+
+				@media @mobile {
+					display: block;
+					margin-bottom: 6px;
+				}
 			}
 		}
 	}

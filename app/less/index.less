@@ -3,10 +3,19 @@
 	position: relative;
 	display: flex;
 	height: 100%;
-	min-height: 685px;
+	min-height: 550px;
 	max-height: 1200px;
 	margin-top: -106px;
 	background-color: #000000;
+
+	@media @tablet {
+		min-height: 440px;
+		margin-top: -95px;
+	}
+
+	@media @mobile {
+		margin-top: -81px;
+	}
 
 	&:after {
 		content: '';
@@ -32,6 +41,10 @@
 		display: flex;
 		align-items: flex-end;
 		width: 100%;
+
+		@media @mobile {
+			align-items: center;
+		}
 	}
 
 	&__emblem {
@@ -42,6 +55,12 @@
 		height: auto;
 		opacity: .08;
 		pointer-events: none;
+
+		@media @mobile {
+			width: 182px;
+			right: -28px;
+			bottom: -36px;
+		}
 	}
 
 	&__logo {
@@ -50,6 +69,12 @@
 		bottom: 52px;
 		width: 140px;
 		height: auto;
+
+		@media @mobile {
+			right: -2px;
+			bottom: 26px;
+			width: 78px;
+		}
 	}
 
 	&__content {
@@ -58,18 +83,44 @@
 		width: 100%;
 		color: @colorLight;
 		padding: 176px 0 70px 100px;
+
+		@media @notebook {
+			padding-left: 0;
+		}
+
+		@media @tablet {
+			padding-top: 165px;
+		}
+
+		@media @mobile {
+			padding-top: 121px;
+			padding-bottom: 121px;
+		}
 	}
 
 	&-head {
 		display: flex;
 		margin: 0 -15px;
 
+		@media @mobile {
+			flex-direction: column;
+		}
+
 		&__col {
 			display: inline-block;
 			padding: 0 15px;
 
+			@media @mobile {
+				order: 0;
+				display: block;
+			}
+
 			&_title {
 				flex: 1;
+
+				@media @mobile {
+					order: 1;
+				}
 			}
 		}
 	}
@@ -81,6 +132,15 @@
 		padding-left: 100px;
 		margin-top: 12px;
 
+		@media @tablet {
+			padding-left: 62px;
+		}
+
+		@media @mobile {
+			padding-left: 30px;
+			margin-bottom: 12px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -90,6 +150,15 @@
 			height: 2px;
 			margin-top: -4px;
 			background-color: rgba(255, 255, 255, .5);
+
+			@media @tablet {
+				width: 42px;
+			}
+
+			@media @mobile {
+				width: 20px;
+				margin-top: 2px;
+			}
 		}
 
 		&__days {
@@ -97,6 +166,11 @@
 			font-size: 50px;
 			line-height: 58px;
 			font-family: @fCustom;
+
+			@media @mobile {
+				font-size: 32px;
+				line-height: 38px;
+			}
 		}
 
 		&__month {
@@ -106,9 +180,20 @@
 			margin-left: 10px;
 			margin-top: 1px;
 
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+				margin-left: 6px;
+				margin-top: -1px;
+			}
+
 			span {
 				display: block;
 				margin-top: 4px;
+
+				@media @mobile {
+					margin-top: 2px;
+				}
 			}
 		}
 	}
@@ -118,16 +203,42 @@
 		line-height: 75px;
 		font-family: @fCustom;
 		font-weight: 400;
+
+		@media @tablet {
+			font-size: 50px;
+			line-height: 56px;
+		}
+
+		@media @mobile {
+			font-size: 32px;
+			line-height: 38px;
+		}
 	}
 
 	&__btn {
 		margin-top: 54px;
+
+		@media @tablet {
+			margin-top: 37px;
+		}
+
+		@media @mobile {
+			margin-top: 22px;
+		}
 	}
 }
 
 .schedule {
 	&__row {
 		padding: 80px 0 62px;
+
+		@media @tablet {
+			padding: 62px 0 50px;
+		}
+
+		@media @mobile {
+			padding: 60px 0 31px;
+		}
 	}
 
 	&-t {
@@ -142,10 +253,20 @@
 			}
 		}
 
+		@media @mobile {
+			display: block;
+
+		}
+
 		td {
 			border-top: 1px solid #DEDBDB;
 			padding-left: 15px;
 			padding-right: 15px;
+
+			@media @mobile {
+				padding-right: 0;
+				padding-left: 20px;
+			}
 
 			&:first-child {
 				padding-left: 0;
@@ -160,6 +281,19 @@
 			width: 8.3333%;
 			padding-top: 40px;
 			padding-bottom: 40px;
+
+			@media @tablet {
+				width: 139px;
+				padding-top: 27px;
+				padding-bottom: 27px;
+			}
+
+			@media @mobile {
+				display: inline-block;
+				width: 60px;
+				padding-top: 24px;
+				padding-bottom: 10px;
+			}
 		}
 
 		&-date {
@@ -180,6 +314,28 @@
 				font-family: @fAstraSans;
 				margin-top: 6px;
 				margin-left: 4px;
+
+				span {
+					display: none;
+
+					@media @tablet {
+						display: block;
+						color: @colorGray;
+						margin-top: 2px;
+					}
+				}
+			}
+
+			&__time {
+				display: none;
+
+				@media @tablet {
+					display: block;
+					color: @colorGray;
+					font-size: 14px;
+					line-height: 16px;
+					margin-top: -2px;
+				}
 			}
 		}
 
@@ -187,6 +343,10 @@
 			width: 16.6666%;
 			padding-top: 46px;
 			padding-bottom: 46px;
+
+			@media @tablet {
+				display: none;
+			}
 		}
 
 		&-time {
@@ -203,6 +363,19 @@
 		&_content {
 			padding-top: 33px;
 			padding-bottom: 34px;
+
+			@media @tablet {
+				padding-top: 28px;
+				padding-bottom: 30px;
+			}
+
+			@media @mobile {
+				display: inline-block;
+				width: calc(100% - 60px);
+				padding-right: 0;
+				padding-top: 25px;
+				padding-bottom: 12px;
+			}
 		}
 
 		&__title {
@@ -211,22 +384,64 @@
 			font-size: 40px;
 			line-height: 46px;
 			font-family: @fCustom;
+
+			@media @tablet {
+				min-height: 44px;
+				font-size: 32px;
+				line-height: 38px;
+			}
+
+			@media @mobile {
+				min-height: 32px;
+				font-size: 24px;
+				line-height: 30px;
+			}
 		}
 
 		&-info {
 			font-size: 0;
 			margin-top: 12px;
 
+			@media @tablet {
+				margin-top: 11px;
+			}
+
+			@media @mobile {
+				margin-top: 7px;
+			}
+
+			br {
+				display: none;
+
+				@media @mobile {
+					display: block;
+				}
+			}
+
 			&__age {
 				margin-right: 15px;
+
+				@media @mobile {
+					float: right;
+					margin: 3px 0 -3px 10px;
+				}
 			}
 
 			&__text {
 				font-size: 18px;
 				line-height: 24px;
 
+				@media @mobile {
+					font-size: 14px;
+					line-height: 25px;
+				}
+
 				span {
 					padding: 0 5px;
+
+					@media @mobile {
+						display: none;
+					}
 				}
 			}
 		}
@@ -235,6 +450,21 @@
 			width: 16.6666%;
 			padding-top: 48px;
 			padding-bottom: 40px;
+
+			@media @tablet {
+				width: 181px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+
+			@media @mobile {
+				display: inline-block;
+				width: calc(100% - 60px);
+				padding-top: 0;
+				padding-bottom: 29px;
+				margin-left: 60px;
+				border-top-width: 0 !important;
+			}
 		}
 
 		&__price {
@@ -243,16 +473,31 @@
 			font-size: 18px;
 			line-height: 21px;
 			margin: 12px 0 0 10px;
+
+			@media @mobile {
+				font-size: 16px;
+				line-height: 18px;
+				margin: 10px 0 0;
+			}
 		}
 
 		&-gallery {
 			font-size: 0;
 			margin: 20px -5px 6px;
 
+			@media @mobile {
+				margin: 20px -3px 0;
+			}
+
 			&__col {
 				display: inline-block;
 				padding: 0 5px;
 				margin-bottom: 10px;
+
+				@media @mobile {
+					padding: 3px;
+					margin-bottom: 6px;
+				}
 			}
 
 			&__item {
@@ -263,6 +508,10 @@
 				padding-top: 60 / 90 * 100%;
 				opacity: .5;
 				transition: opacity .2s ease;
+
+				@media @mobile {
+					width: 66px;
+				}
 
 				&:hover {
 					opacity: 1;
@@ -276,28 +525,80 @@
 	position: relative;
 	background-color: #000000;
 
+	@media @mobile {
+		&__bg {
+			object-position: 65% 50%;
+		}
+	}
+
 	&__row {
 		padding-top: 93px;
 		padding-bottom: 73px;
+
+		@media @tablet {
+			padding-top: 80px;
+			padding-bottom: 55px;
+		}
+
+		@media @mobile {
+			padding-top: 60px;
+			padding-bottom: 45px;
+		}
 	}
 
 	&__content {
 		max-width: 570px;
 		color: @colorLight;
+
+		@media @tablet {
+			width: 66.6666%;
+		}
+
+		@media @mobile {
+			width: 100%;
+			max-width: 414px;
+		}
 	}
 
 	&__title {
 		margin-bottom: 49px;
+
+		@media @tablet {
+			margin-bottom: 40px;
+		}
+
+		@media @mobile {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__text {
 		font-size: 18px;
 		line-height: 23px;
 		margin-bottom: 25px;
+
+		@media @tablet {
+			font-size: 20px;
+		}
+
+		@media @mobile {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 5px;
+		}
 	}
 
 	&__list {
 		margin: 31px 0 0 50px;
+
+		@media @tablet {
+			margin-left: 42px;
+		}
+
+		@media @mobile {
+			margin-left: 38px;
+			margin-top: 0;
+		}
 
 		li {
 			position: relative;
@@ -305,6 +606,18 @@
 			line-height: 23px;
 			padding-left: 50px;
 			margin-bottom: 25px;
+
+			@media @tablet {
+				font-size: 20px;
+				padding-left: 38px;
+				margin-bottom: 20px;
+			}
+
+			@media @mobile {
+				font-size: 16px;
+				line-height: 20px;
+				margin-bottom: 5px;
+			}
 
 			&:before {
 				content: '';
@@ -314,6 +627,10 @@
 				width: 20px;
 				height: 2px;
 				background-color: @colorPink;
+
+				@media @mobile {
+					top: 10px;
+				}
 			}
 		}
 	}
@@ -332,15 +649,43 @@
 		height: 326px;
 		margin-right: -300px;
 		background-color: rgba(35, 12, 17, 0.05);
+
+		@media @tablet {
+			height: 280px;
+			margin-right: -173px;
+		}
+
+		@media @mobile {
+			right: 0;
+			margin-right: 0;
+		}
 	}
 
 	&__row {
 		padding-top: 91px;
 		padding-bottom: 100px;
+
+		@media @tablet {
+			padding-top: 85px;
+			padding-bottom: 74px;
+		}
+
+		@media @mobile {
+			padding-top: 60px;
+			padding-bottom: 58px;
+		}
 	}
 
 	&__title {
 		margin: 0 200px 48px 0;
+
+		@media @tablet {
+			margin-bottom: 35px;
+		}
+
+		@media @mobile {
+			margin: 0 0 78px;
+		}
 	}
 
 	&-slider {
@@ -348,10 +693,31 @@
 		white-space: nowrap;
 		margin: 0 -15px;
 
+		@media @tablet {
+			margin: 0 -10px;
+		}
+
+		@media @mobile {
+			margin: 0 -15px;
+		}
+
 		&__col {
 			display: inline-block;
 			width: 33.3333%;
 			padding: 0 15px;
+
+			@media @tablet {
+				padding: 0 10px;
+			}
+
+			@media @mobile {
+				width: 260px;
+				padding: 0 5px 0 15px;
+			}
+
+			@media @small {
+				width: 233px;
+			}
 		}
 
 		.slick-arrow {
@@ -362,6 +728,14 @@
 			height: 46px;
 			cursor: pointer;
 			padding: 15px;
+
+			@media @tablet {
+				top: -82px;
+			}
+
+			@media @mobile {
+				top: -62px;
+			}
 
 			svg {
 				fill: rgba(145, 133, 136, 0.5);
@@ -377,6 +751,12 @@
 
 		.slick-prev {
 			margin-right: 100px;
+
+			@media @mobile {
+				right: auto;
+				left: 0;
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -400,6 +780,18 @@
 			line-height: 40px;
 			font-family: @fCustom;
 			margin-top: 16px;
+
+			@media @tablet {
+				font-size: 26px;
+				line-height: 34px;
+				margin-top: 20px;
+			}
+
+			@media @mobile {
+				font-size: 22px;
+				line-height: 28px;
+				margin-top: 21px;
+			}
 		}
 
 		&__text {
@@ -408,6 +800,14 @@
 			font-size: 16px;
 			line-height: 22px;
 			margin-top: 15px;
+
+			@media @tablet {
+				margin-top: 10px;
+			}
+
+			@media @mobile {
+				margin-top: 11px;
+			}
 		}
 	}
 }
@@ -418,17 +818,41 @@
 	&__row {
 		padding-top: 88px;
 		padding-bottom: 69px;
+
+		@media @tablet {
+			padding-top: 74px;
+			padding-bottom: 50px;
+		}
+
+		@media @mobile {
+			padding-top: 60px;
+			padding-bottom: 42px;
+		}
 	}
 
 	&-list {
 		font-size: 0;
 		margin: 0 -15px -10px;
 
+		@media @tablet {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
 		&__col {
 			display: inline-block;
 			width: 50%;
 			padding: 0 15px;
 			margin-bottom: 40px;
+
+			@media @tablet {
+				padding: 0 10px;
+			}
+
+			@media @mobile {
+				width: 100%;
+				margin-bottom: 27px;
+			}
 		}
 	}
 
@@ -436,20 +860,50 @@
 		font-size: 0;
 		margin: 0 -15px;
 
+		@media @tablet {
+			margin: 0 -10px;
+		}
+
 		&__col {
 			display: inline-block;
 			width: 50%;
 			padding: 0 15px;
+
+			@media @tablet {
+				display: block;
+				width: auto;
+				padding: 0 10px;
+
+				&:first-child {
+					max-width: 248px;
+
+					@media @mobile {
+						max-width: 310px;
+					}
+				}
+			}
 		}
 
 		&__photo {
 			overflow: hidden;
 			position: relative;
 			padding-top: 183 / 270 * 100%;
+
+			@media @tablet {
+				margin-bottom: 20px;
+			}
+
+			@media @mobile {
+				margin-bottom: 16px;
+			}
 		}
 
 		&__content {
 			padding: 12px 0;
+
+			@media @tablet {
+				padding: 0;
+			}
 		}
 
 		&__date {
@@ -457,12 +911,31 @@
 			font-size: 16px;
 			line-height: 18px;
 			margin-bottom: 11px;
+
+			@media @tablet {
+				margin-bottom: 10px;
+			}
+
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+			}
 		}
 
 		&__title {
 			font-size: 32px;
 			line-height: 42px;
 			font-family: @fCustom;
+
+			@media @tablet {
+				font-size: 26px;
+				line-height: 34px;
+			}
+
+			@media @mobile {
+				font-size: 22px;
+				line-height: 28px;
+			}
 		}
 	}
 }
@@ -471,6 +944,15 @@
 	&__row {
 		padding-top: 98px;
 		padding-bottom: 60px;
+
+		@media @tablet {
+			padding-top: 73px;
+		}
+
+		@media @mobile {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&__head {
@@ -478,15 +960,28 @@
 	}
 
 	&-list {
+		overflow: hidden;
 		font-size: 0;
 		white-space: nowrap;
 		margin: 0 -15px;
+
+		@media @tablet {
+			margin: 0 -10px;
+		}
 
 		&__col {
 			display: inline-block;
 			width: 100% / 6;
 			padding: 0 15px;
 			margin-bottom: 30px;
+
+			@media @tablet {
+				padding: 0 10px;
+			}
+
+			@media @mobile {
+				width: 100% / 4;
+			}
 		}
 	}
 

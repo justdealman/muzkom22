@@ -2,12 +2,49 @@
 	&__row {
 		padding-top: 108px;
 		padding-bottom: 70px;
+
+		@media @notebook {
+			padding-top: 78px;
+			padding-bottom: 50px;
+		}
+
+		@media @tablet {
+			padding-top: 65px;
+		}
+
+		@media @mobile {
+			padding-top: 49px;
+		}
 	}
 
 	&-footer {
 		padding-top: 80px;
 		margin-top: 46px;
 		border-top: 1px solid #DEDBDB;
+
+		@media @mobile {
+			border-top-width: 0;
+			padding-top: 0;
+			margin-top: 36px;
+		}
+
+		&__all {
+			display: none;
+
+			@media @mobile {
+				display: inline-block;
+				color: @colorGray;
+				font-size: 16px;
+				line-height: 18px;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-top: 30px;
+
+				&:hover {
+					color: @colorBlue;
+				}
+			}
+		}
 	}
 }
 
@@ -15,16 +52,32 @@
 	font-size: 0;
 	margin: 55px -15px 0;
 
+	@media @tablet {
+		margin-top: 41px;
+	}
+
+	@media @mobile {
+		margin-top: 0;
+	}
+
 	&__col {
 		display: inline-block;
 		padding: 0 15px;
 
 		&_lc {
 			width: 66.6666%;
+
+			@media @tablet {
+				width: 100%;
+			}
 		}
 
 		&_rc {
 			width: 33.3333%;
+
+			@media @tablet {
+				display: none;
+			}
 		}
 	}
 
@@ -64,16 +117,58 @@
 			}
 		}
 	}
+
+	&-tablet {
+		&__col {
+			&_tablet {
+				display: none;
+
+				@media @tablet {
+					display: inline-block;
+					margin-top: 9px;
+				}
+			}
+		}
+
+		@media @tablet {
+			font-size: 0;
+			margin: 0 -18px 50px;
+
+			&__col {
+				display: inline-block;
+				width: 50%;
+				padding: 0 18px;
+			}
+		}
+
+		@media @mobile {
+			margin: 0 0 30px;
+
+			&__col {
+				display: block;
+				width: auto;
+				padding: 0;
+			}
+		}
+	}
 }
 
 .preview {
 	font-size: 0;
 	margin: 0 -15px 12px;
 
+	@media @mobile {
+		margin-bottom: -12px;
+	}
+
 	&__col {
 		display: inline-block;
 		padding: 0 15px;
 		margin-bottom: 28px;
+
+		@media @mobile {
+			margin-bottom: 31px;
+		}
 
 		&_name {
 			width: 100%;
@@ -94,12 +189,23 @@
 		font-size: 16px;
 		line-height: 28px;
 		margin-bottom: 2px;
+
+		@media @mobile {
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 6px;
+		}
 	}
 
 	&__text {
 		display: block;
 		font-size: 20px;
 		line-height: 28px;
+
+		@media @mobile {
+			font-size: 16px;
+			line-height: 20px;
+		}
 	}
 }
 
@@ -111,10 +217,22 @@
 		font-size: 0;
 		padding: 21px 15px 29px;
 
+		@media @tablet {
+			padding: 19px 20px 19px;
+		}
+
+		@media @mobile {
+			padding: 19px 10px 18px;
+		}
+
 		&__col {
 			flex: 1;
 			display: inline-block;
 			padding: 0 15px;
+
+			@media @tablet {
+				padding: 0 10px;
+			}
 		}
 
 		&__text {
@@ -123,6 +241,16 @@
 			line-height: 48px;
 			font-family: @fCustom;
 			white-space: nowrap;
+
+			@media @tablet {
+				font-size: 36px;
+				line-height: 42px;
+			}
+
+			@media @mobile {
+				font-size: 26px;
+				line-height: 32px;
+			}
 		}
 
 		&__subtext {
@@ -130,6 +258,12 @@
 			color: fade(@colorBlack, 50%);
 			font-size: 16px;
 			line-height: 18px;
+
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+				margin-top: -2px;
+			}
 		}
 	}
 
@@ -137,12 +271,30 @@
 		padding: 26px 30px 32px;
 		border-top: 1px solid #DEDBDB;
 
+		@media @tablet {
+			padding: 21px 30px 36px;
+		}
+
+		@media @mobile {
+			padding: 20px 20px 19px;
+		}
+
 		&__title {
 			display: block;
 			color: fade(@colorBlack, 50%);
 			font-size: 16px;
 			line-height: 18px;
 			margin-bottom: 6px;
+
+			@media @tablet {
+				margin-bottom: 5px;
+			}
+
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+				margin-bottom: 2px;
+			}
 		}
 
 		&__price {
@@ -152,6 +304,16 @@
 			line-height: 40px;
 			font-family: @fCustom;
 			margin-bottom: 13px;
+
+			@media @tablet {
+				font-size: 30px;
+				margin-bottom: 16px;
+			}
+
+			@media @mobile {
+				font-size: 24px;
+				margin-bottom: 7px;
+			}
 		}
 	}
 }
@@ -167,6 +329,18 @@
 		font-weight: 400;
 		font-family: @fCustom;
 		margin: 59px 0 25px;
+
+		@media @tablet {
+			font-size: 34px;
+			line-height: 40px;
+			margin: 51px 0 19px;
+		}
+
+		@media @mobile {
+			font-size: 24px;
+			line-height: 30px;
+			margin: 40px 0 10px;
+		}
 	}
 
 	p {
@@ -174,12 +348,22 @@
 		line-height: 28px;
 		margin-bottom: 28px;
 
+		@media @mobile {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 20px;
+		}
+
 		span {
 			color: fade(@colorBlack, 50%);
 		}
 
 		+ .gallery {
 			margin-top: 57px;
+
+			@media @tablet {
+				margin-top: 30px;
+			}
 		}
 	}
 
@@ -187,10 +371,24 @@
 		font-size: 20px;
 		line-height: 28px;
 		margin-bottom: 28px;
+
+		@media @mobile {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 20px;
+		}
 	}
 
 	ul {
 		margin: -8px 0 30px 50px;
+
+		@media @notebook {
+			margin-left: 0;
+		}
+
+		@media @mobile {
+			margin-bottom: 0;
+		}
 
 		li {
 			position: relative;
@@ -198,6 +396,16 @@
 			line-height: 28px;
 			padding-left: 50px;
 			margin-bottom: 16px;
+
+			@media @tablet {
+				padding-left: 38px;
+			}
+
+			@media @mobile {
+				font-size: 16px;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
 
 			&:before {
 				content: '';
@@ -207,6 +415,10 @@
 				width: 20px;
 				height: 2px;
 				background-color: @colorPink;
+
+				@media @mobile {
+					top: 10px;
+				}
 			}
 
 			span {
@@ -220,10 +432,23 @@
 	max-width: 770px;
 	margin-bottom: 60px;
 
+	@media @tablet {
+		margin-bottom: 51px;
+	}
+
+	@media @mobile {
+		max-width: none;
+		margin-bottom: 35px;
+	}
+
 	&-main {
 		overflow: hidden;
 		font-size: 0;
 		white-space: nowrap;
+
+		@media @mobile {
+			margin: 0 -15px;
+		}
 
 		.slick-arrow {
 			position: absolute;
@@ -237,6 +462,12 @@
 			border: 2px solid fade(@colorLight, 50%);
 			border-radius: 50%;
 			transition: border-color .2s ease;
+
+			@media @mobile {
+				width: 24px;
+				height: 24px;
+				margin: -12px 15px;
+			}
 
 			&:hover {
 				border-color: @colorLight;
@@ -253,6 +484,10 @@
 				fill: fade(@colorLight, 50%);
 				transform: translate(-50%, -50%);
 				transition: fill .2s ease;
+
+				@media @mobile {
+					transform: translate(-50%, -50%) scale(.5);
+				}
 			}
 		}
 
@@ -288,6 +523,12 @@
 			line-height: 28px;
 			padding: 11px 24px;
 			background-color: rgba(35, 12, 17, 0.75);
+
+			@media @mobile {
+				font-size: 13px;
+				line-height: 16px;
+				padding: 7px 15px;
+			}
 		}
 	}
 
@@ -295,6 +536,10 @@
 		overflow: hidden;
 		white-space: nowrap;
 		margin: 10px -5px 0;
+
+		@media @mobile {
+			margin: 10px -3px 0;
+		}
 
 		&:before,
 		&:after {
@@ -322,6 +567,11 @@
 			padding: 0 5px;
 			opacity: .5;
 
+			@media @mobile {
+				width: 64px;
+				padding: 0 3px;
+			}
+
 			&.is-current {
 				opacity: 1;
 
@@ -334,6 +584,11 @@
 					bottom: 0;
 					left: 5px;
 					border: 1px solid #dedbdb;
+
+					@media @mobile {
+						left: 3px;
+						right: 3px;
+					}
 				}
 
 				&:after {
@@ -345,6 +600,11 @@
 					bottom: 1px;
 					left: 6px;
 					border: 2px solid #ffffff;
+
+					@media @mobile {
+						left: 4px;
+						right: 4px;
+					}
 				}
 			}
 		}
@@ -364,11 +624,22 @@
 	margin: 37px 0 49px;
 	border: 2px solid #EEEDED;
 
+	@media @mobile {
+		padding: 16px 15px 16px;
+		margin: 30px -15px 30px;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
 	&__inner {
 		display: inline-block;
 		width: 100%;
 		max-width: 600px;
 		text-align: left;
+
+		@media @mobile {
+			max-width: none;
+		}
 	}
 
 	&__item {
@@ -381,22 +652,41 @@
 		left: 0;
 		top: 10px;
 		fill: @colorBlack;
+
+		@media @mobile {
+			top: 4px;
+		}
 	}
 
 	&__text {
 		font-size: 20px;
 		line-height: 28px;
+
+		@media @mobile {
+			font-size: 16px;
+			line-height: 18px;
+		}
 	}
 }
 
 .jury-l {
 	margin-top: 40px;
 
+	@media @mobile {
+		margin-top: 20px;
+	}
+
 	&__item {
 		position: relative;
 		display: flex;
 		padding-bottom: 33px;
 		margin: 0 -15px 40px;
+
+		@media @mobile {
+			display: block;
+			padding-bottom: 0;
+			margin-bottom: 30px;
+		}
 
 		&:after {
 			content: '';
@@ -405,6 +695,10 @@
 			right: 15px;
 			bottom: 0;
 			border-bottom: 1px solid #DEDBDB;
+
+			@media @mobile {
+				display: none;
+			}
 		}
 
 		&:last-child {
@@ -433,6 +727,14 @@
 		display: inline-block;
 		padding: 0 15px;
 
+		@media @mobile {
+			display: block;
+
+			&:first-child {
+				max-width: 320px;
+			}
+		}
+
 		&_content {
 			flex: 1;
 		}
@@ -443,6 +745,14 @@
 		position: relative;
 		width: 270px;
 		padding-top: 250 / 270 * 100%;
+
+		@media @notebook {
+			width: 240px;
+		}
+
+		@media @mobile {
+			margin-bottom: 16px;
+		}
 	}
 
 	&__title {
@@ -451,12 +761,24 @@
 		line-height: 40px;
 		font-family: @fCustom;
 		margin-bottom: 18px;
+
+		@media @mobile {
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 14px;
+		}
 	}
 
 	&__text {
 		font-size: 20px;
 		line-height: 28px;
 		margin-bottom: 18px;
+
+		@media @mobile {
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 10px;
+		}
 	}
 }
 
@@ -469,12 +791,37 @@
 	margin-bottom: 50px;
 	border-top: 1px solid #DEDBDB;
 
+	@media @tablet {
+		margin-bottom: 30px;
+	}
+
+	@media @mobile {
+		position: relative;
+		justify-content: center;
+		text-align: center;
+		padding-bottom: 46px;
+		padding-top: 30px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
 	&__item {
 		display: inline-block;
 		font-size: 32px;
 		line-height: 42px;
 		font-family: @fCustom;
 		margin: 0 11px;
+
+		@media @tablet {
+			font-size: 28px;
+			line-height: 38px;
+		}
+
+		@media @mobile {
+			font-size: 22px;
+			line-height: 28px;
+			margin: 0 8px;
+		}
 	}
 
 	&__arrow {
@@ -487,14 +834,28 @@
 		margin-top: 2px;
 		margin-bottom: -2px;
 
+		@media @mobile {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+		}
+
 		&_prev {
 			margin-left: -10px;
 			margin-right: 10px;
+
+			@media @mobile {
+				margin-left: -90px;
+			}
 		}
 
 		&_next {
 			margin-left: 10px;
 			margin-right: -10px;
+
+			@media @mobile {
+				margin-left: 0;
+			}
 		}
 
 		&:hover {
@@ -518,21 +879,42 @@
 	font-size: 0;
 	margin: 48px -15px 10px;
 
+	@media @mobile {
+		margin-top: 30px;
+	}
+
 	&__col {
 		display: inline-block;
 		padding: 0 15px;
 
+		@media @mobile {
+			display: block;
+		}
+
 		&_gallery {
 			width: 66.6666%;
+
+			@media @mobile {
+				width: auto;
+			}
 		}
 
 		&_content {
 			width: 33.3333%;
+
+			@media @mobile {
+				width: auto;
+			}
 		}
 	}
 
 	&__content {
 		padding: 30px 0;
+
+		@media @mobile {
+			padding: 0;
+			margin-top: -15px;
+		}
 	}
 
 	&__text {
@@ -540,6 +922,11 @@
 		font-size: 18px;
 		line-height: 28px;
 		font-style: italic;
+
+		@media @mobile {
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 
 	&__date {
@@ -548,5 +935,11 @@
 		font-size: 18px;
 		line-height: 28px;
 		margin-top: 32px;
+
+		@media @mobile {
+			font-size: 14px;
+			line-height: 16px;
+			margin-top: 16px;
+		}
 	}
 }
