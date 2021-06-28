@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Muzkom22</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<header class="header header_black">
+			<div class="container">
+				<div class="header__row-m">
+					<a href="#" class="header-logo-m">
+						<svg class="header-logo-m__icon">
+							<use xlink:href="./img/sprite.svg#logo-m"></use>
+						</svg>
+					</a>
+					<nav class="nav nav_main">
+						<ul>
+							<li>
+								<a href="#" class="nav__item">Афиша</a>
+								<a href="#" class="nav__item">Репертуар</a>
+							</li>
+							<li>
+								<a href="#" class="nav__item">Театр</a>
+								<a href="#" class="nav__item is-active">Коллектив</a>
+							</li>
+							<li>
+								<a href="#" class="nav__item">Новости</a>
+								<a href="#" class="nav__item">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-contacts">
+						<span class="header-contacts__title">Касса театра</span>
+						<a href="tel:+73852505085" class="header-contacts__phone">(3852) 50-50-85</a>
+					</div>
+					<div class="header-vision">
+						<svg class="header-vision__icon">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+					</div>
+					<div class="header-menu js-menu">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="inner">
+			<div class="container">
+				<div class="inner__row inner__row_m">
+					<h1 class="title title_mb">Спящая красавица</h1>
+					<div class="article">
+						<div class="article__col article__col_lc">
+							<div class="article-tablet">
+								<div class="article-tablet__col">
+									<div class="preview">
+										<div class="preview__col preview__col_age">
+											<span class="preview__title">Возраст:</span>
+											<span class="preview__text">0+</span>
+										</div>
+										<div class="preview__col preview__col_duration">
+											<span class="preview__title">Длительность:</span>
+											<span class="preview__text">1 ч. 30 мин.</span>
+										</div>
+										<div class="preview__col preview__col_genre">
+											<span class="preview__title">Жанр:</span>
+											<span class="preview__text">Музыкальная сказка в 2-х действиях</span>
+										</div>
+									</div>
+								</div>
+								<div class="article-tablet__col article-tablet__col_tablet">
+									<div class="card-mini js-card">
+										<div class="card-mini-date">
+											<div class="card-mini-date__col">
+												<span class="card-mini-date__text js-current-date">21 мая</span>
+												<span class="card-mini-date__subtext js-current-weekday">пятница</span>
+											</div>
+											<div class="card-mini-date__col">
+												<span class="card-mini-date__text js-current-time">18:30</span>
+											</div>
+										</div>
+										<div class="card-mini-select">
+											<div class="card-mini-select__arrow card-mini-select__prev js-sel-event" data-direction="prev">
+												<div>
+													<svg width="70" height="16" viewBox="0 0 70 16" xmlns="http://www.w3.org/2000/svg">
+														<path d="M0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM70 9H1V7H70V9Z"/>
+													</svg>
+												</div>
+											</div>
+											<span class="card-mini-select__title js-card-show-all ">все даты</span>
+											<div class="card-mini-select__arrow card-mini-select__next js-sel-event" data-direction="next">
+												<div>
+													<svg width="70" height="16" viewBox="0 0 70 16" xmlns="http://www.w3.org/2000/svg">
+														<path d="M69.7071 8.70711C70.0976 8.31658 70.0976 7.68342 69.7071 7.29289L63.3431 0.928932C62.9526 0.538408 62.3195 0.538408 61.9289 0.928932C61.5384 1.31946 61.5384 1.95262 61.9289 2.34315L67.5858 8L61.9289 13.6569C61.5384 14.0474 61.5384 14.6805 61.9289 15.0711C62.3195 15.4616 62.9526 15.4616 63.3431 15.0711L69.7071 8.70711ZM0 9H69V7H0V9Z"/>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card-mini-all js-card-all">
+											<div class="card-mini-all__list">
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item is-active"
+												  data-date="21 мая"
+												  data-time="18:30"
+												  data-weekday="пятница"
+												  data-price="400"
+											>
+												21 мая (пт), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="25 мая"
+												  data-time="18:30"
+												  data-weekday="вторник"
+												  data-price="350"
+											>
+												25 мая (вт), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="26 мая"
+												  data-time="18:30"
+												  data-weekday="среда"
+												  data-price="350"
+											>
+												26 мая (ср), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="27 мая"
+												  data-time="18:30"
+												  data-weekday="четверг"
+												  data-price="350"
+											>
+												27 мая (чт), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="28 мая"
+												  data-time="18:30"
+												  data-weekday="пятница"
+												  data-price="350"
+											>
+												28 мая (пт), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="01 июня"
+												  data-time="18:30"
+												  data-weekday="вторник"
+												  data-price="350"
+											>
+												01 июн (вт), 18:30
+											</span>
+												</div>
+												<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="02 июня"
+												  data-time="18:30"
+												  data-weekday="среда"
+												  data-price="350"
+											>
+												02 июн (ср), 18:30
+											</span>
+												</div>
+											</div>
+											<span class="card-mini-all__tip">Если Вы планируете покупать билеты на конкретную дату, выберите ее из списка</span>
+										</div>
+										<div class="card-mini-action js-card-action">
+											<span class="card-mini-action__title">Цена билетов</span>
+											<span class="card-mini-action__price"><span class="js-current-price">400</span> руб.</span>
+											<button class="btn-secondary btn-secondary_filled">
+												<svg class="btn-secondary__icon" width="26" height="16">
+													<use xlink:href="./img/sprite.svg#ticket"></use>
+												</svg>
+												<span class="btn-secondary__text">Купить билет</span>
+											</button>
+										</div>
+									</div>
+									<!--<div class="card-mini">
+										<span class="card-mini__message">Спектакль находится<br> в архиве</span>
+									</div>-->
+									<!--<div class="card-mini">
+										<span class="card-mini__message card-mini__message_pink">Билетов нет<br> в продаже</span>
+									</div>-->
+								</div>
+							</div>
+
+							<div class="gallery">
+								<div class="gallery-main js-gallery-main">
+									<div class="gallery-main__col" data-id="1">
+										<a href="./pic/gallery-3.jpg" class="gallery-main__item" data-fancybox="gallery">
+											<img src="./pic/gallery-3.jpg" alt="" class="img-cover">
+										</a>
+									</div>
+									<div class="gallery-main__col" data-id="2">
+										<a href="./pic/gallery-3.jpg" class="gallery-main__item" data-fancybox="gallery">
+											<img src="./pic/gallery-3.jpg" alt="" class="img-cover">
+										</a>
+									</div>
+									<div class="gallery-main__col" data-id="3">
+										<a href="./pic/gallery-3.jpg" class="gallery-main__item" data-fancybox="gallery">
+											<img src="./pic/gallery-3.jpg" alt="" class="img-cover">
+										</a>
+									</div>
+									<div class="gallery-main__col" data-id="4">
+										<a href="./pic/gallery-3.jpg" class="gallery-main__item" data-fancybox="gallery">
+											<img src="./pic/gallery-3.jpg" alt="" class="img-cover">
+										</a>
+									</div>
+								</div>
+								<div class="gallery-preview js-gallery-preview">
+									<div class="gallery-preview__col is-current" data-id="1">
+										<div class="gallery-preview__item">
+											<img src="./pic/preview-6-1.jpg" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="gallery-preview__col" data-id="2">
+										<div class="gallery-preview__item">
+											<img src="./pic/preview-6-2.jpg" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="gallery-preview__col" data-id="3">
+										<div class="gallery-preview__item">
+											<img src="./pic/preview-6-3.jpg" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="gallery-preview__col" data-id="4">
+										<div class="gallery-preview__item">
+											<img src="./pic/preview-6-4.jpg" alt="" class="img-cover">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="text-b">
+								<h2>Описание</h2>
+								<p>В королевстве праздник — день рождения принцессы Авроры. Песни, танцы, фейерверки, волшебные дары очаровательных фей... Но внезапное появление злой колдуньи и ее страшное предсказание о роковом уколе веретеном грозит разрушить этот счастливый мир.</p>
+								<p>Вас ждет встреча с самой волшебной и самой красивой сказкой, которая когда-либо  ставилась в театре музыкальной комедии.</p>
+								<p>Юные зрители станут соучастниками захватывающих приключений в зачарованном королевстве, свидетелями подвигов, возможных только в сказках, и соавторами торжества всепобеждающей любви.</p>
+								<p>Магия спецэффектов, яркая сценография, невероятное количество костюмов – сделают сказку эмоциональной, выразительной и красочной. А чарующие звуки музыки наполнят её чувственностью и энергией.</p>
+								<p>Музыкальная сказка «Спящая красавица», не оставит вас равнодушными, она обязательно понравится детям и взрослым. Мы ждем вас.</p>
+								<p>Премьера состоялась 1 июня 2013 года.</p>
+
+								<div class="cast-group">
+									<h2>Постановочная группа</h2>
+									<div class="cast">
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-1.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Константин<br> Яковлев</a>
+														<span class="cast__role">Режиссёр-постановщик</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-2.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Елена<br> Иващенко</a>
+														<span class="cast__role">Музыкальный руководитель </span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-3.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Наталья<br> Шабалина</a>
+														<span class="cast__role">Хормейстер</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-4.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Надежда<br> Зуева</a>
+														<span class="cast__role">Художник по свету</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-male.png" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Александр<br> Бабич</a>
+														<span class="cast__role">Звукорежиссёр</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-female.png" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Татьяна<br> Столбовская</a>
+														<span class="cast__role">Ассистент режиссера</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-b-all">
+										<a href="#" class="text-b-all__link">Показать всех</a>
+									</div>
+								</div>
+
+								<div class="cast-group">
+									<h2>Действующие лица и исполнители</h2>
+									<div class="cast">
+										<div class="cast-nav">
+											<div class="list-nav">
+												<div class="list-nav__col">
+													<a href="#" class="list-nav__item is-active">21 мая</a>
+												</div>
+												<div class="list-nav__col">
+													<a href="#" class="list-nav__item">04 июн</a>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-3.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Александра<br> Карпова</a>
+														<span class="cast__role">Принцесса Аврора</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-5.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Насими<br> Нариманов</a>
+														<span class="cast__role">Принц Филипп</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-6.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Юрий<br> Голубев</a>
+														<span class="cast__role">Король Стефан</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-7.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Зинаида<br> Черных</a>
+														<span class="cast__role">Королева</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-8.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Дмитрий<br> Иванов</a>
+														<span class="cast__role">Король Хьюберт</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-2.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Виктория<br> Гальцева</a>
+														<span class="cast__role">Ассистент режиссера</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-1.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Владимир<br> Давыдов</a>
+														<span class="cast__role">Шут</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-3.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Татьяна<br> Ремизова</a>
+														<span class="cast__role">Фея Фауна</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-4.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Юлия<br> Башкатова</a>
+														<span class="cast__role">Фея Фрея</span>
+													</div>
+												</div>
+												<div class="cast__col">
+													<div class="cast__item">
+														<div class="cast__photo">
+															<img src="./pic/person-sm-7.jpg" class="img-cover" alt="">
+														</div>
+														<a href="#" class="cast__name">Ирина<br> Басманова</a>
+														<span class="cast__role">Фея Флора</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cast__line">
+											<div class="cast__row">
+												<div class="cast__col cast__col_wide">
+													<div class="cast__item">
+														<div class="cast__name">
+															<a href="#">Хор</a>, <a href="#">Балет</a>
+														</div>
+														<span class="cast__role">Слуги Фурии, придворные, няньки, гости, бабочки, мотыльки</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="article__col article__col_rc">
+							<div class="card-mini js-card js-card-sticky">
+								<div class="card-mini-date">
+									<div class="card-mini-date__col">
+										<span class="card-mini-date__text js-current-date">21 мая</span>
+										<span class="card-mini-date__subtext js-current-weekday">пятница</span>
+									</div>
+									<div class="card-mini-date__col">
+										<span class="card-mini-date__text js-current-time">18:30</span>
+									</div>
+								</div>
+								<div class="card-mini-select">
+									<div class="card-mini-select__arrow card-mini-select__prev js-sel-event" data-direction="prev">
+										<div>
+											<svg width="70" height="16" viewBox="0 0 70 16" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM70 9H1V7H70V9Z"/>
+											</svg>
+										</div>
+									</div>
+									<span class="card-mini-select__title js-card-show-all ">все даты</span>
+									<div class="card-mini-select__arrow card-mini-select__next js-sel-event" data-direction="next">
+										<div>
+											<svg width="70" height="16" viewBox="0 0 70 16" xmlns="http://www.w3.org/2000/svg">
+												<path d="M69.7071 8.70711C70.0976 8.31658 70.0976 7.68342 69.7071 7.29289L63.3431 0.928932C62.9526 0.538408 62.3195 0.538408 61.9289 0.928932C61.5384 1.31946 61.5384 1.95262 61.9289 2.34315L67.5858 8L61.9289 13.6569C61.5384 14.0474 61.5384 14.6805 61.9289 15.0711C62.3195 15.4616 62.9526 15.4616 63.3431 15.0711L69.7071 8.70711ZM0 9H69V7H0V9Z"/>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="card-mini-all js-card-all">
+									<div class="card-mini-all__list">
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item is-active"
+												  data-date="21 мая"
+												  data-time="18:30"
+												  data-weekday="пятница"
+												  data-price="400"
+											>
+												21 мая (пт), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="25 мая"
+												  data-time="18:30"
+												  data-weekday="вторник"
+												  data-price="350"
+											>
+												25 мая (вт), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="26 мая"
+												  data-time="18:30"
+												  data-weekday="среда"
+												  data-price="350"
+											>
+												26 мая (ср), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="27 мая"
+												  data-time="18:30"
+												  data-weekday="четверг"
+												  data-price="350"
+											>
+												27 мая (чт), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="28 мая"
+												  data-time="18:30"
+												  data-weekday="пятница"
+												  data-price="350"
+											>
+												28 мая (пт), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="01 июня"
+												  data-time="18:30"
+												  data-weekday="вторник"
+												  data-price="350"
+											>
+												01 июн (вт), 18:30
+											</span>
+										</div>
+										<div class="card-mini-all__col">
+											<span class="card-mini-all__item js-card-item"
+												  data-date="02 июня"
+												  data-time="18:30"
+												  data-weekday="среда"
+												  data-price="350"
+											>
+												02 июн (ср), 18:30
+											</span>
+										</div>
+									</div>
+									<span class="card-mini-all__tip">Если Вы планируете покупать билеты на конкретную дату, выберите ее из списка</span>
+								</div>
+								<div class="card-mini-action js-card-action">
+									<span class="card-mini-action__title">Цена билетов</span>
+									<span class="card-mini-action__price"><span class="js-current-price">400</span> руб.</span>
+									<button class="btn-secondary btn-secondary_filled">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+								</div>
+							</div>
+							<!--<div class="card-mini js-card-sticky">
+								<span class="card-mini__message">Спектакль находится<br> в архиве</span>
+							</div>-->
+							<!--<div class="card-mini js-card-sticky">
+								<span class="card-mini__message card-mini__message_pink">Билетов нет<br> в продаже</span>
+							</div>-->
+						</div>
+					</div>
+					<div class="inner-footer inner-footer_noborder">
+						<div class="head">
+							<div class="head__col head__col_title">
+								<h2 class="title">Следующие спектакли</h2>
+							</div>
+							<div class="head__col">
+								<a href="#" class="head__all">Вся программа</a>
+							</div>
+						</div>
+						<table class="schedule-t schedule-t_no-border">
+							<tbody>
+								<tr>
+									<td class="schedule-t_date">
+										<div class="schedule-t-date">
+											<span class="schedule-t-date__day">01</span>
+											<span class="schedule-t-date__month">июн <span>чт</span></span>
+										</div>
+										<span class="schedule-t-date__time">18:30</span>
+									</td>
+									<td class="schedule-t_time">
+										<span class="schedule-t-time">Четверг <span>18:30</span></span>
+									</td>
+									<td class="schedule-t_content">
+										<a href="#" class="schedule-t__title">Вий</a>
+										<div class="schedule-t-info">
+											<span class="age-limit schedule-t-info__age">6+</span>
+											<span class="schedule-t-info__text">Балет в 2-х действиях <span>|</span> 2 ч. 10 мин.</span>
+										</div>
+										<div class="schedule-t-gallery">
+											<div class="schedule-t-gallery__col">
+												<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-4">
+													<img src="./pic/preview-4-1.jpg" alt="" class="img-cover">
+												</a>
+											</div>
+											<div class="schedule-t-gallery__col">
+												<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-4">
+													<img src="./pic/preview-4-2.jpg" alt="" class="img-cover">
+												</a>
+											</div>
+										</div>
+									</td>
+									<td class="schedule-t_action">
+										<button class="btn-secondary">
+											<svg class="btn-secondary__icon" width="26" height="16">
+												<use xlink:href="./img/sprite.svg#ticket"></use>
+											</svg>
+											<span class="btn-secondary__text">Купить билет</span>
+										</button>
+										<span class="schedule-t__price">от 400 руб.</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="schedule-t_date">
+										<div class="schedule-t-date">
+											<span class="schedule-t-date__day">02</span>
+											<span class="schedule-t-date__month">июн <span>пт</span></span>
+										</div>
+										<span class="schedule-t-date__time">18:30</span>
+									</td>
+									<td class="schedule-t_time">
+										<span class="schedule-t-time">Пятница <span>18:30</span></span>
+									</td>
+									<td class="schedule-t_content">
+										<a href="#" class="schedule-t__title">Бабий бунт</a>
+										<div class="schedule-t-info">
+											<span class="age-limit schedule-t-info__age">12+</span>
+											<span class="schedule-t-info__text">Музыкальная комедия в 2-х действиях <span>|</span> 1 ч. 20 мин.</span>
+										</div>
+										<div class="schedule-t-gallery">
+											<div class="schedule-t-gallery__col">
+												<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-5">
+													<img src="./pic/preview-5-1.jpg" alt="" class="img-cover">
+												</a>
+											</div>
+											<div class="schedule-t-gallery__col">
+												<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-5">
+													<img src="./pic/preview-5-2.jpg" alt="" class="img-cover">
+												</a>
+											</div>
+											<div class="schedule-t-gallery__col">
+												<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-5">
+													<img src="./pic/preview-5-3.jpg" alt="" class="img-cover">
+												</a>
+											</div>
+										</div>
+									</td>
+									<td class="schedule-t_action">
+										<button class="btn-secondary">
+											<svg class="btn-secondary__icon" width="26" height="16">
+												<use xlink:href="./img/sprite.svg#ticket"></use>
+											</svg>
+											<span class="btn-secondary__text">Купить билет</span>
+										</button>
+										<span class="schedule-t__price">от 400 руб.</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="#" class="inner-footer__all">Все спектакли</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-i">
+					<div class="footer-i__row">
+						<div class="footer-i__col">
+							<svg class="footer-i__logo">
+								<use xlink:href="./img/sprite.svg#logo-m"></use>
+							</svg>
+						</div>
+						<div class="footer-i__col footer-i__col_wide">
+							<div class="footer-phones">
+								<div class="footer-phones__item">
+									<span class="footer-phones__title">Приемная</span>
+									<a href="tel:+73852506852" class="footer-phones__num">(3852) 50-68-52</a>
+								</div>
+								<div class="footer-phones__item">
+									<span class="footer-phones__title">Касса театра</span>
+									<a href="tel:+73852505085" class="footer-phones__num">(3852) 50-50-85</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer-i__col footer-i__col_wide">
+							<div class="footer-social">
+								<div class="footer-social__list">
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="9">
+											<use xlink:href="./img/sprite.svg#vkontakte"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="15">
+											<use xlink:href="./img/sprite.svg#facebook"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="15">
+											<use xlink:href="./img/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="10" height="15">
+											<use xlink:href="./img/sprite.svg#odnoklassniki"></use>
+										</svg>
+									</a>
+								</div>
+								<span class="footer-social__text">Министерство культуры Алтайского края</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-m">
+					<div class="footer-m__row">
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Афиша</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Репертуар</a>
+							</div>
+							<div class="footer-m__notebook">
+								<div class="footer-m__category">
+									<a href="#">Новости</a>
+								</div>
+								<div class="footer-m__category">
+									<a href="#">Контакты</a>
+								</div>
+								<div class="footer-m__category">
+									<a href="#">Гостевая книга</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Театр</a>
+							</div>
+							<ul class="footer-m__list">
+								<li>
+									<a href="#">История театра</a>
+								</li>
+								<li>
+									<a href="#">Схема зрительного зала</a>
+								</li>
+								<li>
+									<a href="#">Документы</a>
+								</li>
+								<li>
+									<a href="#">Технические характеристики</a>
+								</li>
+								<li>
+									<a href="#">Вакансии</a>
+								</li>
+								<li>
+									<a href="#">Независимая оценка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Коллектив</a>
+							</div>
+							<ul class="footer-m__list">
+								<li>
+									<a href="#">Актеры</a>
+								</li>
+								<li>
+									<a href="#">Балет</a>
+								</li>
+								<li>
+									<a href="#">Хор</a>
+								</li>
+								<li>
+									<a href="#">Оркестр</a>
+								</li>
+								<li>
+									<a href="#">Художественное руководство</a>
+								</li>
+								<li>
+									<a href="#">Постановщики</a>
+								</li>
+								<li>
+									<a href="#">Цеха</a>
+								</li>
+								<li>
+									<a href="#">Администрация</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Новости</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Контакты</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Гостевая книга</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-vision">
+					<a href="#" class="footer-vision__link">
+						<svg class="footer-vision__icon" width="71" height="26">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+						<span class="footer-vision__text">Версия для слабовидящих</span>
+					</a>
+				</div>
+				<div class="footer-info">
+					<div class="footer-info__col footer-info__col_nav">
+						<span class="footer-info__text">© 2021. Все права защищены.<br> Фестиваль «Шаг» — проект Алтайского театра музыкальной комедии.</span>
+						<div class="footer-info-nav">
+							<div class="footer-info-nav__col">
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Правила посещения театра</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-info__col">
+						<span class="footer-info__text">Разработка сайта:</span>
+						<span class="footer-info__text footer-info__text_author"><a href="#">Полезные системы</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="drop drop_main js-drop">
+			<div class="container">
+				<div class="drop__row">
+					<div class="drop__col">
+						<div class="drop-big">
+							<a href="#">Афиша</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Театр</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Новости</a>
+						</div>
+					</div>
+					<div class="drop__col">
+						<div class="drop-big">
+							<a href="#">Репертуар</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Коллектив</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+					<div class="drop__col">
+						<ul class="drop-list">
+							<li>
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</li>
+							<li>
+								<a href="#">Правила посещения театра</a>
+							</li>
+						</ul>
+					</div>
+					<span class="drop__contacts">Касса театра <span>(3852) 50-50-85</span></span>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

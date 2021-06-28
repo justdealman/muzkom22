@@ -3,6 +3,10 @@
 		padding-top: 108px;
 		padding-bottom: 70px;
 
+		&_m {
+			padding-top: 88px;
+		}
+
 		@media @notebook {
 			padding-top: 78px;
 			padding-bottom: 50px;
@@ -21,6 +25,15 @@
 		padding-top: 80px;
 		margin-top: 46px;
 		border-top: 1px solid #DEDBDB;
+
+		&_noborder {
+			padding-top: 20px;
+			border-top-width: 0;
+
+			@media @tablet {
+				padding-top: 0;
+			}
+		}
 
 		@media @mobile {
 			border-top-width: 0;
@@ -316,6 +329,186 @@
 			}
 		}
 	}
+
+	&-select {
+		position: relative;
+		text-align: center;
+		padding: 13px 20px 15px;
+		border-top: 1px solid #DEDBDB;
+
+		&__title {
+			display: inline-block;
+			color: rgba(35, 12, 17, 0.5);
+			font-size: 16px;
+			line-height: 18px;
+			cursor: pointer;
+
+			&:hover {
+				color: @colorBlue;
+			}
+		}
+
+		&__arrow {
+			position: absolute;
+			padding: 15px;
+			top: 50%;
+			z-index: 5;
+			fill: @colorGray;
+			cursor: pointer;
+			transform: translateY(-50%);
+			transition: opacity .2s ease;
+			opacity: .5;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			div {
+				overflow: hidden;
+				position: relative;
+				width: 70px;
+				height: 16px;
+			}
+
+			svg {
+				width: 70px;
+				height: 16px;
+			}
+		}
+
+		&__prev {
+			left: 14px;
+
+			@media @mobile {
+				left: 5px;
+			}
+		}
+
+		&__next {
+			right: 14px;
+
+			@media @mobile {
+				right: 5px;
+			}
+		}
+	}
+
+	&-all {
+		display: none;
+
+		&__list {
+			position: relative;
+			padding: 10px 14px;
+			margin: 0;
+			border-top: 1px solid #DEDBDB;
+
+			@media @mobile {
+				padding: 10px 5px;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 0;
+				width: 10px;
+				height: 10px;
+				margin: -5px;
+				background-color: @colorLight;
+				border: 1px solid #DEDBDB;
+				transform: rotate(-45deg);
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				height: 10px;
+				background-color: @colorLight;
+			}
+		}
+
+		&__col {
+			display: inline-block;
+			width: 50%;
+			padding: 5px 15px;
+
+			@media @notebook {
+				width: 100%;
+			}
+
+			@media @tablet {
+				width: 50%;
+			}
+
+			@media @small {
+				width: 100%;
+			}
+		}
+
+		&__item {
+			display: block;
+			color: fade(@colorBlack, 50%);
+			font-size: 16px;
+			line-height: 18px;
+			cursor: pointer;
+
+			&:hover {
+				color: @colorBlue;
+			}
+
+			&.is-active {
+				color: @colorBlack;
+
+				&:hover {
+					color: @colorBlack;
+				}
+			}
+		}
+
+		&__tip {
+			display: block;
+			color: @colorBlack;
+			font-size: 16px;
+			line-height: 18px;
+			padding: 9px 29px 19px;
+			border-top: 1px solid #DEDBDB;
+
+			@media @mobile {
+				padding: 9px 20px 19px;
+			}
+		}
+	}
+
+	&__message {
+		display: block;
+		font-size: 32px;
+		line-height: 40px;
+		font-family: @fCustom;
+		text-align: center;
+		padding: 33px 29px 39px;
+
+		@media @notebook {
+			font-size: 26px;
+			line-height: 32px;
+		}
+
+		@media @tablet {
+			padding: 23px 15px 27px;
+		}
+
+		@media @mobile {
+			font-size: 22px;
+			line-height: 28px;
+			padding: 19px 15px 21px;
+		}
+
+		&_pink {
+			color: @colorPink;
+		}
+	}
 }
 
 .text-b {
@@ -423,6 +616,32 @@
 
 			span {
 				color: fade(@colorBlack, 50%);
+			}
+		}
+	}
+
+	&-all {
+		margin: 30px 0;
+
+		@media @tablet {
+			margin: 20px 0;
+		}
+
+		&__link {
+			color: @colorGray;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			@media @tablet {
+				font-size: 14px;
+				line-height: 16px;
+			}
+
+			&:hover {
+				color: @colorBlue;
 			}
 		}
 	}
@@ -940,6 +1159,369 @@
 			font-size: 14px;
 			line-height: 16px;
 			margin-top: 16px;
+		}
+	}
+}
+
+.cast {
+	border-bottom: 1px solid #DEDBDB;
+
+	&-nav {
+		position: relative;
+		z-index: 5;
+		margin: 37px 0 -11px;
+
+		@media @tablet {
+			margin-top: 32px;
+		}
+
+		@media @mobile {
+			margin-top: 22px;
+		}
+	}
+
+	&-group {
+		margin-top: 80px;
+
+		@media @tablet {
+			margin-top: 60px;
+		}
+
+		@media @mobile {
+			margin-top: 50px;
+		}
+	}
+
+	&__line {
+		border-top: 1px solid #DEDBDB;
+
+		@media @mobile {
+			border-top-width: 0;
+		}
+	}
+
+	&__row {
+		font-size: 0;
+		margin: 0 -15px;
+
+		@media @tablet {
+			margin: 0 -10px;
+		}
+	}
+
+	&__col {
+		display: inline-block;
+		width: 50%;
+		padding: 34px 15px 30px;
+
+		@media @tablet {
+			padding: 24px 10px 20px;
+		}
+
+		@media @mobile {
+			width: 100%;
+			padding-top: 20px;
+			padding-bottom: 16px;
+			border-top: 1px solid #DEDBDB;
+		}
+
+		&_wide {
+			width: 100%;
+		}
+	}
+
+	&__item {
+		position: relative;
+		min-height: 76px;
+		font-size: 0;
+		padding: 0 0 0 100px;
+
+		@media @tablet {
+			padding-left: 90px;
+		}
+	}
+
+	&__photo {
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 6px;
+		display: block;
+		width: 70px;
+		height: 70px;
+
+		@media @mobile {
+			top: 4px;
+		}
+	}
+
+	&__name {
+		display: block;
+		font-size: 32px;
+		line-height: 40px;
+		font-family: @fCustom;
+
+		@media @tablet {
+			font-size: 26px;
+			line-height: 32px;
+		}
+
+		@media @mobile {
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+
+	&__role {
+		display: block;
+		color: @colorGray;
+		font-size: 20px;
+		line-height: 28px;
+		margin-top: 5px;
+
+		@media @tablet {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+
+.artists {
+	&-nav {
+		margin: 52px 0 48px;
+
+		@media @notebook {
+			margin: 30px 0 30px;
+		}
+	}
+
+	&__list {
+		font-size: 0;
+		margin: 0 -15px;
+
+		@media @tablet {
+			margin: 0 -10px;
+		}
+	}
+
+	&__col {
+		display: inline-block;
+		width: 25%;
+		padding: 0 15px;
+		margin-bottom: 47px;
+
+		@media @notebook {
+			margin-bottom: 40px;
+		}
+
+		@media @tablet {
+			width: 50%;
+			padding: 0 10px;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+
+	&__item {
+		display: block;
+		max-width: 270px;
+	}
+
+	&__photo {
+		overflow: hidden;
+		position: relative;
+		display: block;
+		padding-top: 100%;
+		margin-bottom: 16px;
+	}
+
+	&__name {
+		display: block;
+		font-size: 32px;
+		line-height: 40px;
+		font-family: @fCustom;
+		margin-bottom: 5px;
+
+		@media @tablet {
+			font-size: 26px;
+			line-height: 34px;
+		}
+
+		@media @mobile {
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+
+	&__role {
+		display: block;
+		color: @colorGray;
+		font-size: 20px;
+		line-height: 28px;
+
+		@media @tablet {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
+
+.artist {
+	margin-bottom: 77px;
+
+	@media @tablet {
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		margin: 5px 0 41px;
+
+		@media @notebook {
+			margin-bottom: 31px;
+		}
+
+		@media @tablet {
+			margin: 0 0 25px;
+		}
+	}
+
+	&-intro {
+		font-size: 0;
+		margin: 0 -15px 60px;
+
+		@media @notebook {
+			margin-bottom: 40px;
+		}
+
+		@media @mobile {
+			margin-bottom: 30px;
+		}
+
+ 		&__col {
+			display: inline-block;
+			width: 50%;
+			padding: 0 15px;
+
+			@media @mobile {
+				width: 100%;
+			}
+		}
+
+		&__role {
+			position: relative;
+			display: block;
+			font-size: 20px;
+			line-height: 28px;
+			padding-left: 50px;
+			margin-bottom: 38px;
+
+			@media @notebook {
+				margin-bottom: 28px;
+			}
+
+			@media @tablet {
+				padding-left: 40px;
+				margin-bottom: 20px;
+			}
+
+			@media @mobile {
+				font-size: 16px;
+				line-height: 18px;
+				padding-left: 30px;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 15px;
+				width: 20px;
+				height: 2px;
+				background-color: @colorPink;
+
+				@media @mobile {
+					top: 9px;
+					width: 15px;
+				}
+			}
+		}
+	}
+
+	&-photo {
+		max-width: 570px;
+		margin: 0 auto;
+
+		&__inner {
+			overflow: hidden;
+			position: relative;
+			padding-top: 100%;
+		}
+	}
+
+	&-about {
+		font-size: 0;
+		padding: 33px 0 40px;
+		border-top: 1px solid #DEDBDB;
+		border-bottom: 1px solid #DEDBDB;
+
+		@media @notebook {
+			padding: 23px 0 30px;
+		}
+
+		@media @tablet {
+			padding: 20px 0;
+		}
+
+		@media @mobile {
+			margin-bottom: 30px;
+		}
+
+		&__row {
+			margin: 0 -15px -40px;
+
+			@media @notebook {
+				margin-bottom: -20px;
+			}
+		}
+
+		&__col {
+			display: inline-block;
+			width: 50%;
+			padding: 0 15px;
+			margin-bottom: 40px;
+
+			@media @notebook {
+				margin-bottom: 20px;
+			}
+
+			@media @small {
+				width: 100%;
+			}
+
+			&_wide {
+				width: 100%;
+			}
+		}
+
+		&__title {
+			display: block;
+			color: @colorGray;
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 1px;
+		}
+
+		&__text {
+			display: block;
+			font-size: 20px;
+			line-height: 28px;
+
+			@media @mobile {
+				font-size: 16px;
+				line-height: 18px;
+			}
 		}
 	}
 }
