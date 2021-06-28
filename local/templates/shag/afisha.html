@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Muzkom22</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<header class="header header_black">
+			<div class="container">
+				<div class="header__row-m">
+					<a href="#" class="header-logo-m">
+						<svg class="header-logo-m__icon">
+							<use xlink:href="./img/sprite.svg#logo-m"></use>
+						</svg>
+					</a>
+					<nav class="nav">
+						<ul>
+							<li>
+								<a href="#" class="nav__item">Афиша</a>
+								<a href="#" class="nav__item">Репертуар</a>
+							</li>
+							<li>
+								<a href="#" class="nav__item">Театр</a>
+								<a href="#" class="nav__item">Коллектив</a>
+							</li>
+							<li>
+								<a href="#" class="nav__item">Новости</a>
+								<a href="#" class="nav__item">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-contacts">
+						<span class="header-contacts__title">Касса театра</span>
+						<a href="tel:+73852505085" class="header-contacts__phone">(3852) 50-50-85</a>
+					</div>
+					<div class="header-vision">
+						<svg class="header-vision__icon">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+					</div>
+					<div class="header-menu js-menu">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="inner">
+			<div class="container">
+				<div class="inner__row">
+					<h1 class="title title_mb">Афиша</h1>
+					<div class="schedule-sort">
+						<div class="schedule-sort__genre">
+							<div class="list-nav">
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item is-active">Все жанры</a>
+								</div>
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item">Комедия</a>
+								</div>
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item">Мюзикл</a>
+								</div>
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item">Драма</a>
+								</div>
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item">Балет</a>
+								</div>
+								<div class="list-nav__col">
+									<a href="#" class="list-nav__item">Детям</a>
+								</div>
+							</div>
+						</div>
+						<div class="schedule-sort__month">
+							<select class="select">
+								<option selected>Май</option>
+								<option>Июнь</option>
+								<option>Июль</option>
+							</select>
+						</div>
+					</div>
+					<table class="schedule-t">
+						<tbody>
+							<tr>
+								<td class="schedule-t_date schedule-t_date_m">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">21</span>
+										<span class="schedule-t-date__month">мая <span class="is-visible">пт</span></span>
+									</div>
+									<span class="schedule-t-date__time is-visible">18:30</span>
+								</td>
+								<td class="schedule-t_poster">
+									<div class="schedule-t-poster">
+										<img src="./pic/poster-1.jpg" alt="" class="schedule-t-poster__img">
+										<span class="schedule-t-poster__text">Премьера</span>
+									</div>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Золотой теленок</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">12+</span>
+										<span class="schedule-t-info__text">Мюзикл в 2-х действиях <br> <span>|</span> 1 ч. 45 мин.</span>
+									</div>
+									<div class="schedule-t-gallery schedule-t-gallery_m">
+										<div class="schedule-t-gallery__col">
+											<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-1">
+												<img src="./pic/main-preview-1.jpg" alt="" class="img-cover">
+											</a>
+										</div>
+										<div class="schedule-t-gallery__col">
+											<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-1">
+												<img src="./pic/main-preview-2.jpg" alt="" class="img-cover">
+											</a>
+										</div>
+										<div class="schedule-t-gallery__col">
+											<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-1">
+												<img src="./pic/main-preview-3.jpg" alt="" class="img-cover">
+											</a>
+										</div>
+										<div class="schedule-t-gallery__col">
+											<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-1">
+												<img src="./pic/main-preview-4.jpg" alt="" class="img-cover">
+											</a>
+										</div>
+										<div class="schedule-t-gallery__col">
+											<a href="./pic/gallery-1.jpg" class="schedule-t-gallery__item" data-fancybox="group-1">
+												<img src="./pic/main-preview-5.jpg" alt="" class="img-cover">
+											</a>
+										</div>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date schedule-t_date_m">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">22</span>
+										<span class="schedule-t-date__month">мая <span class="is-visible">пт</span></span>
+									</div>
+									<span class="schedule-t-date__time is-visible">17:00</span>
+								</td>
+								<td class="schedule-t_poster">
+									<div class="schedule-t-poster">
+										<img src="./pic/poster-2.jpg" alt="" class="schedule-t-poster__img">
+									</div>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Три мушкетера</a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">12+</span>
+										<span class="schedule-t-info__text">Мюзикл в 2-х действиях <br> <span>|</span> 1 ч. 45 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 400 руб.</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedule-t_date schedule-t_date_m">
+									<div class="schedule-t-date">
+										<span class="schedule-t-date__day">23</span>
+										<span class="schedule-t-date__month">мая <span class="is-visible">пт</span></span>
+									</div>
+									<span class="schedule-t-date__time is-visible">11:00</span>
+								</td>
+								<td class="schedule-t_poster">
+									<div class="schedule-t-poster">
+										<img src="./pic/poster-3.jpg" alt="" class="schedule-t-poster__img">
+									</div>
+								</td>
+								<td class="schedule-t_content">
+									<a href="#" class="schedule-t__title">Мюзикл для детей в 2-х действиях </a>
+									<div class="schedule-t-info">
+										<span class="age-limit schedule-t-info__age">12+</span>
+										<span class="schedule-t-info__text">Мюзикл в 2-х действиях <br> <span>|</span> 1 ч. 45 мин.</span>
+									</div>
+								</td>
+								<td class="schedule-t_action">
+									<button class="btn-secondary">
+										<svg class="btn-secondary__icon" width="26" height="16">
+											<use xlink:href="./img/sprite.svg#ticket"></use>
+										</svg>
+										<span class="btn-secondary__text">Купить билет</span>
+									</button>
+									<span class="schedule-t__price">от 250 руб.</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="schedule-all schedule-all_afisha">
+						<a href="#" class="schedule-all__link">Афиша на июнь</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-i">
+					<div class="footer-i__row">
+						<div class="footer-i__col">
+							<svg class="footer-i__logo">
+								<use xlink:href="./img/sprite.svg#logo-m"></use>
+							</svg>
+						</div>
+						<div class="footer-i__col footer-i__col_wide">
+							<div class="footer-phones">
+								<div class="footer-phones__item">
+									<span class="footer-phones__title">Приемная</span>
+									<a href="tel:+73852506852" class="footer-phones__num">(3852) 50-68-52</a>
+								</div>
+								<div class="footer-phones__item">
+									<span class="footer-phones__title">Касса театра</span>
+									<a href="tel:+73852505085" class="footer-phones__num">(3852) 50-50-85</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer-i__col footer-i__col_wide">
+							<div class="footer-social">
+								<div class="footer-social__list">
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="9">
+											<use xlink:href="./img/sprite.svg#vkontakte"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="15">
+											<use xlink:href="./img/sprite.svg#facebook"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="15" height="15">
+											<use xlink:href="./img/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+									<a href="#" class="footer-social__item">
+										<svg width="10" height="15">
+											<use xlink:href="./img/sprite.svg#odnoklassniki"></use>
+										</svg>
+									</a>
+								</div>
+								<span class="footer-social__text">Министерство культуры Алтайского края</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-m">
+					<div class="footer-m__row">
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Афиша</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Репертуар</a>
+							</div>
+							<div class="footer-m__notebook">
+								<div class="footer-m__category">
+									<a href="#">Новости</a>
+								</div>
+								<div class="footer-m__category">
+									<a href="#">Контакты</a>
+								</div>
+								<div class="footer-m__category">
+									<a href="#">Гостевая книга</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Театр</a>
+							</div>
+							<ul class="footer-m__list">
+								<li>
+									<a href="#">История театра</a>
+								</li>
+								<li>
+									<a href="#">Схема зрительного зала</a>
+								</li>
+								<li>
+									<a href="#">Документы</a>
+								</li>
+								<li>
+									<a href="#">Технические характеристики</a>
+								</li>
+								<li>
+									<a href="#">Вакансии</a>
+								</li>
+								<li>
+									<a href="#">Независимая оценка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Коллектив</a>
+							</div>
+							<ul class="footer-m__list">
+								<li>
+									<a href="#">Актеры</a>
+								</li>
+								<li>
+									<a href="#">Балет</a>
+								</li>
+								<li>
+									<a href="#">Хор</a>
+								</li>
+								<li>
+									<a href="#">Оркестр</a>
+								</li>
+								<li>
+									<a href="#">Художественное руководство</a>
+								</li>
+								<li>
+									<a href="#">Постановщики</a>
+								</li>
+								<li>
+									<a href="#">Цеха</a>
+								</li>
+								<li>
+									<a href="#">Администрация</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-m__col">
+							<div class="footer-m__category">
+								<a href="#">Новости</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Контакты</a>
+							</div>
+							<div class="footer-m__category">
+								<a href="#">Гостевая книга</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-vision">
+					<a href="#" class="footer-vision__link">
+						<svg class="footer-vision__icon" width="71" height="26">
+							<use xlink:href="./img/sprite.svg#glasses"></use>
+						</svg>
+						<span class="footer-vision__text">Версия для слабовидящих</span>
+					</a>
+				</div>
+				<div class="footer-info">
+					<div class="footer-info__col footer-info__col_nav">
+						<span class="footer-info__text">© 2021. Все права защищены.<br> Фестиваль «Шаг» — проект Алтайского театра музыкальной комедии.</span>
+						<div class="footer-info-nav">
+							<div class="footer-info-nav__col">
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Правила посещения театра</a>
+							</div>
+							<div class="footer-info-nav__col">
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-info__col">
+						<span class="footer-info__text">Разработка сайта:</span>
+						<span class="footer-info__text footer-info__text_author"><a href="#">Полезные системы</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="drop drop_main js-drop">
+			<div class="container">
+				<div class="drop__row">
+					<div class="drop__col">
+						<div class="drop-big">
+							<a href="#">Афиша</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Театр</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Новости</a>
+						</div>
+					</div>
+					<div class="drop__col">
+						<div class="drop-big">
+							<a href="#">Репертуар</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Коллектив</a>
+						</div>
+						<div class="drop-big">
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+					<div class="drop__col">
+						<ul class="drop-list">
+							<li>
+								<a href="#">Правила приобретения и возврата билетов</a>
+							</li>
+							<li>
+								<a href="#">Правила посещения театра</a>
+							</li>
+						</ul>
+					</div>
+					<span class="drop__contacts">Касса театра <span>(3852) 50-50-85</span></span>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

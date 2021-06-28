@@ -4,6 +4,10 @@
 	background-color: @colorBlack;
 	transition: background-color .2s linear;
 
+	&_black {
+		background-color: @colorBase;
+	}
+
 	&_light {
 		background-color: transparent;
 	}
@@ -24,6 +28,13 @@
 		@media @mobile {
 			height: 81px;
 		}
+
+		&-m {
+			display: flex;
+			align-items: flex-end;
+			height: 140px;
+			padding-bottom: 10px;
+		}
 	}
 
 	&-logo {
@@ -39,6 +50,17 @@
 			@media @mobile {
 				width: 78px;
 				height: 32px;
+			}
+		}
+
+		&-m {
+			display: inline-block;
+			padding: 10px;
+			margin: -10px -10px 13px -10px;
+
+			&__icon {
+				width: 140px;
+				height: 87px;
 			}
 		}
 	}
@@ -97,6 +119,7 @@
 			transform: translateX(27px);
 			opacity: 0;
 			visibility: hidden;
+			margin-left: -20px;
 
 			&.is-visible {
 				opacity: 1;
@@ -136,6 +159,7 @@
 		}
 
 		@media @mobile {
+			margin-left: 20px;
 			transform: translateX(14px);
 		}
 
@@ -222,6 +246,29 @@
 		visibility: hidden;
 	}
 
+	ul {
+		margin: 0 6px -12px 0;
+
+		@media @notebook {
+			margin-right: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 50px 20px 0;
+
+			@media @notebook {
+				margin-right: 30px;
+			}
+		}
+
+		.nav__item {
+			display: block;
+			padding: 0;
+			margin: 0 0 9px;
+		}
+	}
+
 	&__item {
 		position: relative;
 		display: inline-block;
@@ -273,6 +320,11 @@
 		align-items: flex-start;
 		top: 81px;
 		min-height: calc(100% - 81px);
+	}
+
+	&_main {
+		top: 140px !important;
+		min-height: calc(100% - 140px)!important;
 	}
 
 	&.is-opened {
