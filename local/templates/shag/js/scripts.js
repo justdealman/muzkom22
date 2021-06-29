@@ -139,14 +139,61 @@ $(function() {
         infinite: true,
         adaptiveHeight: true,
         responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: true
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
             }
-        }
-    ]
+        ]
+    });
+
+    var $timelineSlider = $('.js-timeline-slider');
+    if ( $timelineSlider.length > 0 ) {
+        var timeline = [];
+        $timelineSlider.find('[data-id]').each(function(index, el) {
+            timeline.push($(el).attr('data-year'));
+        });
+        console.log(timeline);
+        $timelineSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: $('.js-timeline-prev'),
+            nextArrow: $('.js-timeline-next'),
+            dots: false,
+            cssEase: 'ease',
+            speed: 1000,
+            infinite: true,
+            adaptiveHeight: true
+        });
+        $timelineSlider.on('afterChange', function(event, slick, currentSlide) {
+            $('.js-year-current').text(timeline[currentSlide]);
+            var prev,
+                next,
+                length = timeline.length;
+
+            console.log(currentSlide)
+
+            if ( currentSlide === 0 ) {
+                prev = length;
+            } else {
+                prev = currentSlide - 1;
+            }
+            $('.js-year-prev').text(timeline[prev]);
+
+            if ( currentSlide === length - 1 ) {
+                next = 0;
+            } else {
+                next = currentSlide + 1;
+            }
+            $('.js-year-next').text(timeline[next]);
+        });
+    }
+
+    $('.vacancies-list__title').on('click', function() {
+        $(this).toggleClass('is-active');
     });
 
     function startApp() {
