@@ -7276,6 +7276,14 @@ body.compensate-for-scrollbar {
 	line-height: 18px;
 	margin-bottom: 9px;
 }
+.footer-m__notebook {
+	display: none;
+}
+@media (max-width: 991px) {
+	.footer-m__notebook {
+		display: block;
+	}
+}
 .footer-i {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
